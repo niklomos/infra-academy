@@ -939,14 +939,69 @@ tr:hover td { background: var(--bg-card2); }
                 <div class="card-chevron">›</div>
               </div>
             </div>
+            <div class="card" onclick="openSheet('ups-main')">
+              <div class="card-row">
+                <div class="card-icon" style="background:var(--green-bg)">
+                  <svg viewBox="0 0 20 20" fill="none" stroke="var(--green-text)" stroke-width="1.4"><rect x="3" y="7" width="14" height="9" rx="2"/><path d="M7 7V5a3 3 0 016 0v2"/><path d="M10 11v2"/><circle cx="10" cy="10" r="1.2" fill="var(--green-text)"/></svg>
+                </div>
+                <div class="card-info">
+                  <div class="card-title">UPS & Power Protection</div>
+                  <div class="card-desc">Online/Offline/Line-interactive · VA sizing · Runtime</div>
+                </div>
+                <div class="card-chevron">›</div>
+              </div>
+            </div>
+            <div class="card" onclick="openSheet('ports-main')">
+              <div class="card-row">
+                <div class="card-icon" style="background:var(--amber-bg)">
+                  <svg viewBox="0 0 20 20" fill="none" stroke="var(--amber-text)" stroke-width="1.4"><rect x="2" y="6" width="6" height="4" rx="1"/><rect x="12" y="6" width="6" height="4" rx="1"/><rect x="7" y="9" width="6" height="6" rx="1"/><path d="M5 10v4M15 10v4M10 9V6"/></svg>
+                </div>
+                <div class="card-info">
+                  <div class="card-title">Ports & Connectors</div>
+                  <div class="card-desc">USB, PCIe, Thunderbolt, Video, Network, Server</div>
+                </div>
+                <div class="card-chevron">›</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-label">Foundation — End-user Devices</div>
+          <div class="card-grid">
+            <div class="card" onclick="openSheet('pc-types')">
+              <div class="card-row">
+                <div class="card-icon" style="background:var(--intel-bg)">
+                  <svg viewBox="0 0 20 20" fill="none" stroke="var(--intel-text)" stroke-width="1.4"><rect x="2" y="3" width="16" height="11" rx="2"/><path d="M6 18h8M10 14v4"/><rect x="6" y="6" width="8" height="5" rx="1"/></svg>
+                </div>
+                <div class="card-info">
+                  <div class="card-title">Desktop PC ประเภทต่างๆ</div>
+                  <div class="card-desc">Tower · SFF · Mini PC · Micro PC · AIO · Workstation</div>
+                </div>
+                <div class="card-chevron">›</div>
+              </div>
+            </div>
+            <div class="card" onclick="openSheet('notebook-types')">
+              <div class="card-row">
+                <div class="card-icon" style="background:var(--purple-bg)">
+                  <svg viewBox="0 0 20 20" fill="none" stroke="var(--purple-text)" stroke-width="1.4"><rect x="2" y="3" width="16" height="12" rx="2"/><path d="M2 15h16"/><path d="M1 17h18" stroke-linecap="round"/><rect x="6" y="6" width="8" height="5" rx="1"/></svg>
+                </div>
+                <div class="card-info">
+                  <div class="card-title">Notebook ประเภทต่างๆ</div>
+                  <div class="card-desc">Ultrabook · Business · Gaming · Workstation · 2-in-1</div>
+                </div>
+                <div class="card-chevron">›</div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- INFRASTRUCTURE PAGE -->
         <div id="page-infra" class="page page-pad">
-          <div class="section-label">Infrastructure</div>
+          <div class="section-label">Infrastructure — Virtualization</div>
           <div class="card-grid">
-            <div class="card" onclick="openSheet('vm-concept')"><div class="card-row"><div class="card-icon" style="background:var(--green-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--green-text)" stroke-width="1.4"><rect x="2" y="3" width="16" height="14" rx="2"/><path d="M2 8h16"/><rect x="5" y="11" width="4" height="3" rx=".5"/><rect x="11" y="11" width="4" height="3" rx=".5"/></svg></div><div class="card-info"><div class="card-title">Hypervisor concept</div><div class="card-desc">Type 1 vs Type 2, VM components</div></div><div class="card-chevron">›</div></div></div>
+            <div class="card" onclick="openSheet('vm-what')"><div class="card-row"><div class="card-icon" style="background:var(--green-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--green-text)" stroke-width="1.4"><rect x="2" y="2" width="16" height="16" rx="2"/><rect x="5" y="5" width="4" height="4" rx="1"/><rect x="11" y="5" width="4" height="4" rx="1"/><rect x="5" y="11" width="4" height="4" rx="1"/><rect x="11" y="11" width="4" height="4" rx="1"/></svg></div><div class="card-info"><div class="card-title">VM คืออะไร? ทำไมต้องใช้?</div><div class="card-desc">Virtual Machine พื้นฐาน · ประโยชน์ · ใช้ในองค์กรอย่างไร</div></div><div class="card-chevron">›</div></div></div>
+            <div class="card" onclick="openSheet('vm-concept')"><div class="card-row"><div class="card-icon" style="background:var(--green-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--green-text)" stroke-width="1.4"><rect x="2" y="3" width="16" height="14" rx="2"/><path d="M2 8h16"/><rect x="5" y="11" width="4" height="3" rx=".5"/><rect x="11" y="11" width="4" height="3" rx=".5"/></svg></div><div class="card-info"><div class="card-title">Hypervisor & Architecture</div><div class="card-desc">Type 1 vs Type 2 · vCPU · vRAM · vDisk</div></div><div class="card-chevron">›</div></div></div>
+            <div class="card" onclick="openSheet('vm-license')"><div class="card-row"><div class="card-icon" style="background:var(--green-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--green-text)" stroke-width="1.4"><rect x="4" y="2" width="12" height="16" rx="2"/><path d="M7 7h6M7 10h6M7 13h4"/></svg></div><div class="card-info"><div class="card-title">Windows Server Licensing</div><div class="card-desc">Standard vs Datacenter · CAL · Core · CSP</div></div><div class="card-chevron">›</div></div></div>
+            <div class="card" onclick="openSheet('vm-sizing')"><div class="card-row"><div class="card-icon" style="background:var(--green-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--green-text)" stroke-width="1.4"><path d="M4 16V8l6-4 6 4v8"/><path d="M8 12h4M10 10v4"/><path d="M3 16h14"/></svg></div><div class="card-info"><div class="card-title">VM Sizing & Design</div><div class="card-desc">Sizing guide · Overcommit · HA design</div></div><div class="card-chevron">›</div></div></div>
             <div class="card" onclick="openSheet('vmware')"><div class="card-row"><div class="card-icon" style="background:var(--green-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--green-text)" stroke-width="1.4"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l3 2"/></svg></div><div class="card-info"><div class="card-title">VMware vSphere</div><div class="card-desc">ESXi, vCenter, vSAN, NSX-T, vMotion</div></div><div class="card-chevron">›</div></div></div>
             <div class="card" onclick="openSheet('hyperv')"><div class="card-row"><div class="card-icon" style="background:var(--green-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--green-text)" stroke-width="1.4"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="11" y="3" width="6" height="6" rx="1"/><rect x="3" y="11" width="6" height="6" rx="1"/><rect x="11" y="11" width="6" height="6" rx="1"/></svg></div><div class="card-info"><div class="card-title">Microsoft Hyper-V</div><div class="card-desc">Windows Server, Azure Stack HCI, S2D</div></div><div class="card-chevron">›</div></div></div>
             <div class="card" onclick="openSheet('kvm')"><div class="card-row"><div class="card-icon" style="background:var(--green-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--green-text)" stroke-width="1.4"><path d="M10 3L17 7v6l-7 4-7-4V7z"/><path d="M10 3v10M3 7l7 4 7-4"/></svg></div><div class="card-info"><div class="card-title">KVM / Proxmox</div><div class="card-desc">Open source, Linux native, Ceph</div></div><div class="card-chevron">›</div></div></div>
@@ -1371,9 +1426,442 @@ var SHEETS={
   'ram-main':{t:'RAM / Memory',s:'DDR5 · ECC RDIMM · SO-DIMM · HBM3e',body:function(){return '<div class="section-label" style="padding-left:0">DDR5 — Desktop / Laptop</div><div class="spec-grid"><div class="spec-card"><div class="spec-lbl">Speed</div><div class="spec-val">4800–8000 MT/s</div></div><div class="spec-card"><div class="spec-lbl">Voltage</div><div class="spec-val">1.1V</div></div><div class="spec-card"><div class="spec-lbl">Form</div><div class="spec-val">DIMM / SO-DIMM</div></div><div class="spec-card"><div class="spec-lbl">Platform</div><div class="spec-val">AM5, LGA1851</div></div></div><div class="section-label" style="padding-left:0;margin-top:8px">DDR4 — Legacy</div><div class="spec-grid"><div class="spec-card"><div class="spec-lbl">Speed</div><div class="spec-val">2133–4800 MT/s</div></div><div class="spec-card"><div class="spec-lbl">Platform</div><div class="spec-val">AM4, LGA1700</div></div></div><div class="section-label" style="padding-left:0;margin-top:8px">ECC RDIMM — Server</div><div class="spec-grid"><div class="spec-card"><div class="spec-lbl">Type</div><div class="spec-val">DDR5 ECC Registered</div></div><div class="spec-card"><div class="spec-lbl">Max/socket</div><div class="spec-val">6 TB (EPYC Turin)</div></div><div class="spec-card"><div class="spec-lbl">ECC</div><div class="spec-val">ป้องกัน bit-flip</div></div><div class="spec-card"><div class="spec-lbl">RDIMM vs LRDIMM</div><div class="spec-val">Speed vs Capacity</div></div></div><div class="section-label" style="padding-left:0;margin-top:8px">HBM — AI GPU Memory</div><div class="spec-grid"><div class="spec-card"><div class="spec-lbl">Type</div><div class="spec-val">HBM2e/HBM3/HBM3e</div></div><div class="spec-card"><div class="spec-lbl">Bandwidth</div><div class="spec-val">3.2–5.2 TB/s</div></div><div class="spec-card"><div class="spec-lbl">Capacity</div><div class="spec-val">80–192 GB</div></div><div class="spec-card"><div class="spec-lbl">ใช้กับ</div><div class="spec-val">H100/H200/MI300X</div></div></div><div class="sales-strip" style="margin-top:8px"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">DDR5 ≠ DDR4 — ต้องตรวจ platform ก่อนเสมอ · ECC RAM จำเป็นสำหรับ Server ทุกตัว · LRDIMM ใส่ได้มากกว่า RDIMM แต่ latency สูงกว่า</div></div>';}},
   'storage-main':{t:'Storage',s:'Tier pyramid — OS → Hot → Bulk → Archive',body:function(){return '<div class="table-wrap" style="margin:0 0 12px"><table><tr><th>ประเภท</th><th>Speed</th><th>เหมาะกับ</th></tr><tr><td><span class="bx" style="background:var(--amber-bg);color:var(--amber-text)">NVMe PCIe 5</span></td><td>14 GB/s</td><td>OS + Hot data</td></tr><tr><td><span class="bx" style="background:var(--amber-bg);color:var(--amber-text)">NVMe PCIe 4</span></td><td>7 GB/s</td><td>WS / Gaming</td></tr><tr><td><span class="bx" style="background:var(--amber-bg);color:var(--amber-text)">SATA SSD</span></td><td>550 MB/s</td><td>Bulk storage</td></tr><tr><td><span class="bx" style="background:var(--badge-neutral);color:var(--badge-neutral-text)">SAS SSD</span></td><td>2.4 GB/s</td><td>Enterprise Server</td></tr><tr><td><span class="bx" style="background:var(--badge-neutral);color:var(--badge-neutral-text)">HDD SAS/SATA</span></td><td>250 MB/s</td><td>Bulk / Archive</td></tr><tr><td><span class="bx" style="background:var(--badge-neutral);color:var(--badge-neutral-text)">LTO Tape</span></td><td>400 MB/s</td><td>Long-term backup</td></tr></table></div><div class="section-label" style="padding-left:0">Shared Storage</div><div class="spec-grid"><div class="spec-card"><div class="spec-lbl">SAN</div><div class="spec-val">Block — FC/iSCSI</div></div><div class="spec-card"><div class="spec-lbl">NAS</div><div class="spec-val">File — NFS/SMB</div></div><div class="spec-card"><div class="spec-lbl">Object</div><div class="spec-val">S3-compatible HTTP</div></div><div class="spec-card"><div class="spec-lbl">HCI</div><div class="spec-val">vSAN/Ceph/S2D</div></div></div><div class="use-box" style="margin-top:8px"><div class="use-lbl">RAID Basics</div><div class="use-val">RAID 1 — mirror ปลอดภัย · RAID 5 — parity แนะนำ SMB · RAID 6 — 2 disk fail ได้ Enterprise · RAID 10 — fast+redundant DB</div></div><div class="sales-strip" style="margin-top:8px"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">SAN → DB/VM IOPS สูง · NAS → file share · Object → backup+cloud-native · NVMe PCIe 5 จำเป็นสำหรับ AI workload ที่ต้องการ bandwidth สูง</div></div>';}},
   'gpu-main':{t:'GPU',s:'AI/HPC · Workstation · Gaming · iGPU',body:function(){return '<div class="section-label" style="padding-left:0">AI / HPC GPU (Data Center)</div><div class="table-wrap" style="margin:0 0 12px"><table><tr><th>Model</th><th>VRAM</th><th>เหมาะกับ</th></tr><tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">H200 SXM5</span></td><td>141GB HBM3e</td><td>LLM Training (ดีสุด)</td></tr><tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">H100 SXM5</span></td><td>80GB HBM3</td><td>AI Train/Inference</td></tr><tr><td><span class="bx" style="background:var(--amd-bg);color:var(--amd-text)">MI300X</span></td><td>192GB HBM3</td><td>LLM/HPC VRAM สูงสุด</td></tr><tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">L40S</span></td><td>48GB GDDR6</td><td>Inference/Video/Viz</td></tr><tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">A100 80GB</span></td><td>80GB HBM2e</td><td>Train/Fine-tune (เก่า)</td></tr></table></div><div class="section-label" style="padding-left:0">Workstation GPU</div><div class="spec-grid"><div class="spec-card"><div class="spec-lbl">NVIDIA RTX 6000 Ada</div><div class="spec-val">48GB ECC · VFX/CAD</div></div><div class="spec-card"><div class="spec-lbl">NVIDIA RTX 4500 Ada</div><div class="spec-val">24GB ECC · Mid WS</div></div><div class="spec-card"><div class="spec-lbl">AMD PRO W7900</div><div class="spec-val">48GB · Media/CAD</div></div><div class="spec-card"><div class="spec-lbl">ECC VRAM</div><div class="spec-val">ป้องกัน corruption</div></div></div><div class="section-label" style="padding-left:0;margin-top:8px">Gaming GPU (Consumer)</div><div class="table-wrap" style="margin:0 0 12px"><table><tr><th>Tier</th><th>NVIDIA RTX</th><th>AMD RX</th></tr><tr><td>Ultra High</td><td>5090 · 5080</td><td>9070 XT</td></tr><tr><td>High</td><td>5070 Ti · 4090</td><td>9070 · 7900 XTX</td></tr><tr><td>Mid-High</td><td>5070 · 4080</td><td>7800 XT</td></tr><tr><td>Mid</td><td>4070 · 3080</td><td>7700 XT · 6700 XT</td></tr><tr><td>Entry</td><td>4060 · 3060</td><td>7600 · 6600</td></tr></table></div><div class="section-label" style="padding-left:0">iGPU — ในตัว CPU</div><div class="table-wrap" style="margin:0 0 12px"><table><tr><th>iGPU</th><th>CPU</th><th>ประสิทธิภาพ</th></tr><tr><td>Radeon 890M RDNA3.5</td><td>Ryzen AI 9 HX 375</td><td>ดีสุดใน iGPU ตลาด</td></tr><tr><td>Radeon 780M RDNA3</td><td>Ryzen 7 8700G</td><td>eSports ได้ดี</td></tr><tr><td>Arc 140V (Xe3)</td><td>Core Ultra 258V</td><td>ดีมากสำหรับ Intel</td></tr><tr><td>UHD 770</td><td>Core i9-13900K</td><td>Light office เท่านั้น</td></tr></table></div><div class="sales-strip"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">AMD iGPU (RDNA3/3.5) แรงกว่า Intel iGPU ชัดเจน · H100 SXM5 ต้องคำนวณ 700W/GPU + cooling พิเศษ + NVLink · MI300X VRAM 192GB เหมาะ LLM ขนาดใหญ่ไม่ต้องแบ่ง model</div></div>';}},
-  'psu-main':{t:'PSU & Power',s:'80Plus · ATX 3.0 · UPS · Server Power',body:function(){return '<div class="section-label" style="padding-left:0">80Plus Rating</div><div class="table-wrap" style="margin:0 0 12px"><table><tr><th>Rating</th><th>Efficiency</th><th>เหมาะกับ</th></tr><tr><td><span class="bx" style="background:var(--badge-neutral);color:var(--badge-neutral-text)">80Plus</span></td><td>80%</td><td>Basic build</td></tr><tr><td><span class="bx" style="background:#F0F0E8;color:#4A4A2A">Bronze</span></td><td>82–85%</td><td>Budget PC</td></tr><tr><td><span class="bx" style="background:#E8F0E8;color:#1A401A">Gold</span></td><td>87–90%</td><td>Gaming/Office (แนะนำ)</td></tr><tr><td><span class="bx" style="background:#E8F0F8;color:#1A3040">Platinum</span></td><td>90–92%</td><td>High-end workstation</td></tr><tr><td><span class="bx" style="background:var(--amber-bg);color:var(--amber-text)">Titanium</span></td><td>92–96%</td><td>Server/Data center</td></tr></table></div><div class="spec-grid"><div class="spec-card"><div class="spec-lbl">ATX 3.0</div><div class="spec-val">PCIe 5.0 connector 600W</div></div><div class="spec-card"><div class="spec-lbl">Modular</div><div class="spec-val">Semi/Full — ลด cable</div></div><div class="spec-card"><div class="spec-lbl">Server PSU</div><div class="spec-val">Redundant 1+1 hot-swap</div></div><div class="spec-card"><div class="spec-lbl">UPS</div><div class="spec-val">Online/Offline/Line-interactive</div></div></div><div class="sales-strip" style="margin-top:8px"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">RTX 5090 ต้องการ PSU ≥1000W · Server ควรมี Redundant PSU ทุกตัว · UPS Online (double conversion) ดีสุดสำหรับ Server mission-critical</div></div>';}},
+  'psu-main':{t:'PSU & Power',s:'80Plus · ATX 3.0 · Server Power',body:function(){return '<div class="section-label" style="padding-left:0">80Plus Rating</div><div class="table-wrap" style="margin:0 0 12px"><table><tr><th>Rating</th><th>Efficiency</th><th>เหมาะกับ</th></tr><tr><td><span class="bx" style="background:var(--badge-neutral);color:var(--badge-neutral-text)">80Plus</span></td><td>80%</td><td>Basic build</td></tr><tr><td><span class="bx" style="background:#F0F0E8;color:#4A4A2A">Bronze</span></td><td>82–85%</td><td>Budget PC</td></tr><tr><td><span class="bx" style="background:#E8F0E8;color:#1A401A">Gold</span></td><td>87–90%</td><td>Gaming/Office (แนะนำ)</td></tr><tr><td><span class="bx" style="background:#E8F0F8;color:#1A3040">Platinum</span></td><td>90–92%</td><td>High-end workstation</td></tr><tr><td><span class="bx" style="background:var(--amber-bg);color:var(--amber-text)">Titanium</span></td><td>92–96%</td><td>Server/Data center</td></tr></table></div><div class="spec-grid"><div class="spec-card"><div class="spec-lbl">ATX 3.0</div><div class="spec-val">PCIe 5.0 connector 600W</div></div><div class="spec-card"><div class="spec-lbl">Modular</div><div class="spec-val">Semi/Full — ลด cable</div></div><div class="spec-card"><div class="spec-lbl">Server PSU</div><div class="spec-val">Redundant 1+1 hot-swap</div></div><div class="spec-card"><div class="spec-lbl">Form factor</div><div class="spec-val">ATX / SFX / 1U/2U Server</div></div></div><div class="sales-strip" style="margin-top:8px"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">RTX 5090 ต้องการ PSU ≥1000W · Server ควรมี Redundant PSU ทุกตัว · UPS Online (double conversion) ดีสุดสำหรับ Server mission-critical</div></div>';}},
+  'ups-main':{t:'UPS & Power Protection',s:'Online · Offline · Line-interactive · Sizing',body:function(){
+    return '<div class="section-label" style="padding-left:0">ประเภท UPS</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>ประเภท</th><th>การทำงาน</th><th>Switchover</th><th>เหมาะกับ</th></tr>'+
+    '<tr><td><span class="bx" style="background:var(--amd-bg);color:var(--amd-text)">Offline/Standby</span></td><td>ปกติวิ่งไฟตรง เปลี่ยนแบตเมื่อไฟดับ</td><td>4–25ms</td><td>PC ทั่วไป ราคาถูก</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--amber-bg);color:var(--amber-text)">Line-interactive</span></td><td>AVR ปรับ voltage ก่อน → แบต</td><td>2–4ms</td><td>SMB Server, Network</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--green-bg);color:var(--green-text)">Online / Double Conversion</span></td><td>ไฟผ่านแบตตลอด 0ms switchover</td><td>0ms</td><td>Data Center, Mission Critical</td></tr>'+
+    '</table></div>'+
+    '<div class="section-label" style="padding-left:0;margin-top:4px">การคำนวณขนาด UPS (VA Sizing)</div>'+
+    '<div class="use-box"><div class="use-lbl">สูตรคำนวณ</div><div class="use-val">'+
+    '<strong>Step 1</strong> รวม Watt ของอุปกรณ์ทั้งหมด (ดูจากสติกเกอร์หรือ spec)<br>'+
+    '<strong>Step 2</strong> หาร Power Factor: VA = Watt ÷ 0.8 (PF ทั่วไป)<br>'+
+    '<strong>Step 3</strong> บวกเผื่อ 20–25% สำหรับ head room<br>'+
+    '<strong>ตัวอย่าง</strong>: Server 500W → 500÷0.8 = 625VA × 1.25 = ~800VA → ซื้อ 1000VA</div></div>'+
+    '<div class="section-label" style="padding-left:0;margin-top:4px">Runtime & Battery</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">Runtime เป้าหมาย</div><div class="spec-val">10–15 นาที (graceful shutdown)</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Extended Runtime</div><div class="spec-val">External Battery Pack</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Battery อายุ</div><div class="spec-val">3–5 ปี (VRLA/AGM)</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Hot-swap Battery</div><div class="spec-val">เปลี่ยนแบตโดยไม่ดับ</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Monitoring</div><div class="spec-val">SNMP card / USB / Network</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Auto-shutdown</div><div class="spec-val">Software ปิด OS อัตโนมัติ</div></div>'+
+    '</div>'+
+    '<div class="section-label" style="padding-left:0;margin-top:4px">Topology — Data Center</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>Tier</th><th>Power Path</th><th>Availability</th></tr>'+
+    '<tr><td>Tier 1</td><td>Single path (1 UPS)</td><td>99.671%</td></tr>'+
+    '<tr><td>Tier 2</td><td>Redundant component (N+1)</td><td>99.741%</td></tr>'+
+    '<tr><td>Tier 3</td><td>Dual path (2 UPS, 1 active)</td><td>99.982%</td></tr>'+
+    '<tr><td>Tier 4</td><td>Fault-tolerant dual active</td><td>99.995%</td></tr>'+
+    '</table></div>'+
+    '<div class="chip-wrap"><span class="chip">APC Smart-UPS</span><span class="chip">APC Symmetra</span><span class="chip">Eaton 9PX</span><span class="chip">Vertiv Liebert</span><span class="chip">CyberPower OL</span></div>'+
+    '<div class="sales-strip" style="margin-top:10px"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">'+
+    'UPS ≠ surge protector — ลูกค้าหลายรายเข้าใจผิด · ทุก Server ควรต่อ UPS Online เสมอ · ขาย SNMP card เพิ่มเพื่อ monitor + auto-shutdown ผ่าน network · ถามลูกค้าว่า runtime ต้องการกี่นาที ก่อน size UPS'+
+    '</div></div>';
+  }},
+  'ports-main':{t:'Ports & Connectors',s:'USB · PCIe · Video · Network · Thunderbolt · Server',body:function(){
+    return '<div class="section-label" style="padding-left:0">USB</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>Standard</th><th>Speed</th><th>Connector</th><th>หมายเหตุ</th></tr>'+
+    '<tr><td><span class="bx" style="background:var(--badge-neutral);color:var(--badge-neutral-text)">USB 2.0</span></td><td>480 Mbps</td><td>Type-A</td><td>Mouse/Keyboard</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">USB 3.2 Gen1</span></td><td>5 Gbps</td><td>Type-A/C</td><td>USB 3.0 เดิม</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">USB 3.2 Gen2</span></td><td>10 Gbps</td><td>Type-A/C</td><td>External SSD</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">USB 3.2 Gen2×2</span></td><td>20 Gbps</td><td>Type-C</td><td>NVMe enclosure</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--purple-bg);color:var(--purple-text)">USB4 Gen2×2</span></td><td>20 Gbps</td><td>Type-C</td><td>รองรับ DP + PD</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--purple-bg);color:var(--purple-text)">USB4 Gen3×2</span></td><td>40 Gbps</td><td>Type-C</td><td>เทียบ TB3</td></tr>'+
+    '</table></div>'+
+    '<div class="section-label" style="padding-left:0">Thunderbolt</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>Version</th><th>Speed</th><th>Video</th><th>Power Delivery</th></tr>'+
+    '<tr><td><span class="bx" style="background:var(--amber-bg);color:var(--amber-text)">TB3</span></td><td>40 Gbps</td><td>2× 4K/1× 5K</td><td>100W</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--amber-bg);color:var(--amber-text)">TB4</span></td><td>40 Gbps</td><td>2× 4K</td><td>100W + 2× TB4 port</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--amber-bg);color:var(--amber-text)">TB5</span></td><td>120 Gbps</td><td>3× 4K/8K</td><td>240W</td></tr>'+
+    '</table></div>'+
+    '<div class="section-label" style="padding-left:0">Video Output</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>Port</th><th>Max Resolution</th><th>Audio</th><th>หมายเหตุ</th></tr>'+
+    '<tr><td><span class="bx" style="background:var(--badge-neutral);color:var(--badge-neutral-text)">VGA (D-Sub)</span></td><td>1920×1200</td><td>ไม่มี</td><td>เก่า analog ยังพบ Projector</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--badge-neutral);color:var(--badge-neutral-text)">DVI-D</span></td><td>2560×1600</td><td>ไม่มี</td><td>Dual-link 2K</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">HDMI 2.0</span></td><td>4K @60Hz</td><td>มี</td><td>TV/Monitor ทั่วไป</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">HDMI 2.1</span></td><td>10K / 4K @120Hz</td><td>eARC</td><td>Gaming Monitor / TV 8K</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--green-bg);color:var(--green-text)">DisplayPort 1.4</span></td><td>8K @30Hz / 4K @120Hz</td><td>มี</td><td>PC Monitor มาตรฐาน</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--green-bg);color:var(--green-text)">DisplayPort 2.1</span></td><td>16K / 4K @240Hz</td><td>มี</td><td>Gaming 4K high refresh</td></tr>'+
+    '</table></div>'+
+    '<div class="section-label" style="padding-left:0">PCIe (การ์ดต่อขยาย)</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>Version</th><th>Speed (×16)</th><th>ใช้กับ</th></tr>'+
+    '<tr><td><span class="bx" style="background:var(--badge-neutral);color:var(--badge-neutral-text)">PCIe 3.0</span></td><td>16 GB/s</td><td>เก่า GPU/NVMe</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">PCIe 4.0</span></td><td>32 GB/s</td><td>GPU/NVMe mainstream</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--green-bg);color:var(--green-text)">PCIe 5.0</span></td><td>64 GB/s</td><td>GPU ใหม่/NVMe 14GB/s</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--purple-bg);color:var(--purple-text)">PCIe 6.0</span></td><td>128 GB/s</td><td>Server/AI (2025+)</td></tr>'+
+    '</table></div>'+
+    '<div class="section-label" style="padding-left:0">Network Ports</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>Port</th><th>Speed</th><th>Connector</th><th>ใช้กับ</th></tr>'+
+    '<tr><td><span class="bx" style="background:var(--badge-neutral);color:var(--badge-neutral-text)">RJ-45 1GbE</span></td><td>1 Gbps</td><td>RJ-45 copper</td><td>Office / Home</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">RJ-45 2.5GbE</span></td><td>2.5 Gbps</td><td>RJ-45 copper</td><td>Gaming / NAS ใหม่</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">RJ-45 10GbE</span></td><td>10 Gbps</td><td>RJ-45 Cat6A</td><td>Server / NAS ระยะ 100m</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--green-bg);color:var(--green-text)">SFP+ 10GbE</span></td><td>10 Gbps</td><td>Fiber / DAC</td><td>Server rack</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--green-bg);color:var(--green-text)">SFP28 25GbE</span></td><td>25 Gbps</td><td>Fiber / DAC</td><td>Server → ToR switch</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--amber-bg);color:var(--amber-text)">QSFP28 100GbE</span></td><td>100 Gbps</td><td>Fiber / DAC</td><td>Spine switch / uplink</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--amber-bg);color:var(--amber-text)">QSFP-DD 400GbE</span></td><td>400 Gbps</td><td>Fiber</td><td>DC core / AI cluster</td></tr>'+
+    '</table></div>'+
+    '<div class="section-label" style="padding-left:0">Server-specific Ports</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">IPMI / BMC / iDRAC</div><div class="spec-val">Out-of-band mgmt — KVM over IP ไม่ต้องอยู่หน้า Server</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">iDRAC (Dell)</div><div class="spec-val">Dell Remote Access Controller</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">iLO (HPE)</div><div class="spec-val">Integrated Lights-Out</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">ALOM/ILOM (Sun/Oracle)</div><div class="spec-val">ALOM/ILOM management</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">VGA Console</div><div class="spec-val">KVM switch ต่อ monitor หลาย server</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Serial Console</div><div class="spec-val">RS-232 fallback เมื่อ network down</div></div>'+
+    '</div>'+
+    '<div class="sales-strip" style="margin-top:10px"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">'+
+    'iDRAC/iLO = ต้องขายเสมอกับ Server — ช่วย Remote KVM ไม่ต้องไป Data Center ทุกครั้ง · SFP+ DAC cable ถูกกว่า Fiber module มาก (ระยะ ≤7m) · HDMI 2.1 จำเป็นสำหรับ 4K @120Hz Gaming monitor'+
+    '</div></div>';
+  }},
   'cooling-main':{t:'Cooling',s:'Air · AIO · Custom Loop · Server',body:function(){return '<div class="table-wrap" style="margin:0 0 12px"><table><tr><th>Type</th><th>Cooling Capacity</th><th>เหมาะกับ</th></tr><tr><td>Air Cooler Tower</td><td>~200W TDP</td><td>Mid-range, เงียบ</td></tr><tr><td>AIO 240mm</td><td>~250W TDP</td><td>High-end Gaming</td></tr><tr><td>AIO 360mm</td><td>~350W TDP</td><td>Workstation, OC</td></tr><tr><td>Custom Loop</td><td>500W+</td><td>Enthusiast, Multi-GPU</td></tr><tr><td>Server 1U/2U Fan</td><td>Up to 500W+</td><td>Rack server</td></tr><tr><td>Liquid Immersion</td><td>100kW+/rack</td><td>AI cluster, DC</td></tr></table></div><div class="spec-grid"><div class="spec-card"><div class="spec-lbl">TIM (Thermal Paste)</div><div class="spec-val">Conductonaut liquid metal ดีสุด</div></div><div class="spec-card"><div class="spec-lbl">Server อุณหภูมิ</div><div class="spec-val">Inlet ≤27°C Tier-3 DC</div></div><div class="spec-card"><div class="spec-lbl">PUE</div><div class="spec-val">Power Usage Effectiveness</div></div><div class="spec-card"><div class="spec-lbl">Rear-door HX</div><div class="spec-val">Liquid cool high density rack</div></div></div><div class="sales-strip" style="margin-top:8px"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">H100/H200 cluster ต้องการ Direct Liquid Cooling (DLC) หรือ Liquid Immersion — air cooling ไม่เพียงพอ · PUE ≤1.2 = Tier-4 DC ที่ดี</div></div>';}},
-  'vm-concept':{t:'Hypervisor Concept',s:'Type 1 vs Type 2 — VM basics',body:function(){return '<div class="spec-grid"><div class="spec-card"><div class="spec-lbl">Type 1 — Bare-metal</div><div class="spec-val">รันบน hardware โดยตรง</div></div><div class="spec-card"><div class="spec-lbl">Type 2 — Hosted</div><div class="spec-val">รันบน OS host</div></div><div class="spec-card"><div class="spec-lbl">VM Components</div><div class="spec-val">vCPU + vRAM + vDisk</div></div><div class="spec-card"><div class="spec-lbl">Live Migration</div><div class="spec-val">ย้าย VM ไม่ดับเครื่อง</div></div><div class="spec-card"><div class="spec-lbl">Overcommit</div><div class="spec-val">vCPU > pCPU (4:1 safe)</div></div><div class="spec-card"><div class="spec-lbl">Snapshot</div><div class="spec-val">Point-in-time VM state</div></div></div><div class="use-box"><div class="use-lbl">Type 1 — Production</div><div class="use-val">ESXi · Hyper-V · KVM/Proxmox · Nutanix AHV</div></div><div class="use-box"><div class="use-lbl">Type 2 — Dev/Lab</div><div class="use-val">VirtualBox · VMware Workstation · Parallels</div></div><div class="sales-strip"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">Production ใช้ Type 1 เสมอ · Type 2 เหมาะ test/dev เท่านั้น · vCPU Overcommit 4:1 ปลอดภัยสำหรับ mixed workload</div></div>';}},
+  'pc-types':{t:'Desktop PC ประเภทต่างๆ',s:'Tower · SFF · Mini · Micro · AIO · Workstation · Server',body:function(){
+    return '<div class="section-label" style="padding-left:0">ภาพรวม Form Factor</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>ประเภท</th><th>ขนาด</th><th>Expandability</th><th>เหมาะกับ</th></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">Full Tower</span></td><td>50×22×50 cm+</td><td>สูงสุด — GPU ยาว/หนัก</td><td>Enthusiast, WS, Server Tower</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">Mid Tower</span></td><td>45×20×45 cm</td><td>สูง — ATX MB + 3 card</td><td>Gaming, Creator ทั่วไป</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">Mini Tower</span></td><td>35×18×35 cm</td><td>กลาง — mATX MB</td><td>Office, Home general</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--green-bg);color:var(--green-text)">SFF (Small Form Factor)</span></td><td>30×10×30 cm</td><td>จำกัด — low-profile card</td><td>Office compact, POS</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--green-bg);color:var(--green-text)">Mini PC</span></td><td>~12×12×5 cm</td><td>น้อย — SO-DIMM/M.2</td><td>Office, HTPC, Digital signage</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--green-bg);color:var(--green-text)">Micro PC / Stick PC</span></td><td>≤10×10×3 cm</td><td>แทบไม่มี — Soldered</td><td>Digital signage, IoT edge</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--amber-bg);color:var(--amber-text)">AIO (All-in-One)</span></td><td>จอ 21–32 นิ้ว</td><td>น้อย — ติดจอ</td><td>Reception, Office สวยงาม</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--amd-bg);color:var(--amd-text)">Workstation Desktop</span></td><td>Full/Mid Tower</td><td>สูงมาก — multi GPU/CPU</td><td>VFX, CAD, AI, Engineering</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--amd-bg);color:var(--amd-text)">Tower Server</span></td><td>Full Tower</td><td>Server-grade — ECC/RAID</td><td>SMB server ไม่มี rack</td></tr>'+
+    '</table></div>'+
+
+    '<div class="section-label" style="padding-left:0">🖥️ Full / Mid / Mini Tower PC</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">Motherboard</div><div class="spec-val">ATX (Full/Mid) · mATX (Mini)</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">GPU ได้ถึง</div><div class="spec-val">RTX 5090 / dual GPU (Full)</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">RAM slot</div><div class="spec-val">4 slot DDR5 ถึง 192GB</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Storage bay</div><div class="spec-val">หลาย M.2 + 3.5" HDD bay</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">PSU standard</div><div class="spec-val">ATX 3.0 — แก้ไขได้ง่าย</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">แบรนด์นิยม</div><div class="spec-val">Lenovo, HP, Dell, Acer, ASUS</div></div>'+
+    '</div>'+
+
+    '<div class="section-label" style="padding-left:0;margin-top:4px">📦 SFF — Small Form Factor</div>'+
+    '<div class="use-box"><div class="use-lbl">คุณลักษณะ</div><div class="use-val">'+
+    'ใช้ Low Profile PCIe card เท่านั้น · PSU เป็น SFX หรือ Flex ATX · CPU เดียวกับ Desktop แต่ระบาย heat จำกัดกว่า · เหมาะ Office ที่ต้องการ Desktop แต่พื้นที่จำกัด · ราคาเทียบเท่า Mid Tower แต่ขยายได้น้อยกว่า'+
+    '</div></div>'+
+    '<div class="chip-wrap"><span class="chip">HP EliteDesk 800 G9 SFF</span><span class="chip">Dell OptiPlex SFF</span><span class="chip">Lenovo ThinkCentre M90s</span></div>'+
+
+    '<div class="section-label" style="padding-left:0;margin-top:8px">🟦 Mini PC</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">CPU</div><div class="spec-val">Mobile CPU (TDP 15–28W) ไม่ใช่ Desktop</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">RAM</div><div class="spec-val">SO-DIMM DDR5 สูงสุด 96GB</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Storage</div><div class="spec-val">M.2 NVMe 1–2 slot</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">GPU</div><div class="spec-val">iGPU เท่านั้น (ไม่มี dGPU)</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Output</div><div class="spec-val">HDMI + DP + TB4 (3 จอ)</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">ราคา</div><div class="spec-val">~10,000–35,000฿</div></div>'+
+    '</div>'+
+    '<div class="use-box"><div class="use-lbl">Use Case จริง</div><div class="use-val">'+
+    'HTPC ต่อ TV · Office document/web · Digital signage ร้านค้า · Thin client แทน PC เก่า · Dev machine สำหรับ remote desktop · NAS/Homelab ประหยัดไฟ'+
+    '</div></div>'+
+    '<div class="chip-wrap"><span class="chip">Intel NUC 13</span><span class="chip">ASUS NUC 14 Pro</span><span class="chip">Beelink EQ/SER</span><span class="chip">MINISFORUM UM</span><span class="chip">HP Elite Mini 800</span><span class="chip">Lenovo ThinkCentre M75q</span></div>'+
+
+    '<div class="section-label" style="padding-left:0;margin-top:8px">⬛ Micro PC / Stick PC</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">ขนาด</div><div class="spec-val">เล็กกว่า Mini PC อีก บางรุ่นเล็กกว่า palm</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">CPU</div><div class="spec-val">Intel N100 / AMD Ryzen Embedded</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">RAM</div><div class="spec-val">Soldered 8–16GB (แก้ไขไม่ได้)</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">ราคา</div><div class="spec-val">~3,000–8,000฿</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Stick PC</div><div class="spec-val">ขนาด USB drive เสียบ HDMI TV ได้เลย</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">ข้อจำกัด</div><div class="spec-val">performance ต่ำ ไม่เหมาะงาน heavy</div></div>'+
+    '</div>'+
+    '<div class="chip-wrap"><span class="chip">Chuwi LarkBox</span><span class="chip">MeLE Quieter</span><span class="chip">ASUS Chromebox</span><span class="chip">Intel Compute Stick</span></div>'+
+
+    '<div class="section-label" style="padding-left:0;margin-top:8px">🖼️ AIO — All-in-One</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">จอ</div><div class="spec-val">21.5–32 นิ้ว IPS/VA built-in</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">CPU</div><div class="spec-val">Mobile CPU (เหมือน Notebook)</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">GPU</div><div class="spec-val">iGPU หรือ MXM dGPU (บางรุ่น)</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">ข้อดี</div><div class="spec-val">สะอาด ไม่มีสายระโยงระยาง</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">ข้อเสีย</div><div class="spec-val">ซ่อมยาก upgrade น้อย จอพังต้องเปลี่ยนทั้งชุด</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">ราคา</div><div class="spec-val">~20,000–80,000฿</div></div>'+
+    '</div>'+
+    '<div class="chip-wrap"><span class="chip">Apple iMac 24"</span><span class="chip">Dell Inspiron AIO</span><span class="chip">HP Envy AIO 32</span><span class="chip">Lenovo IdeaCentre AIO</span><span class="chip">ASUS Vivo AIO</span></div>'+
+
+    '<div class="section-label" style="padding-left:0;margin-top:8px">🔬 Desktop Workstation</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">CPU</div><div class="spec-val">Intel Xeon W / AMD Ryzen Threadripper PRO</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">RAM</div><div class="spec-val">ECC RDIMM DDR5 — 128GB–2TB</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">GPU</div><div class="spec-val">NVIDIA RTX 6000 Ada / AMD PRO W7900</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Storage</div><div class="spec-val">NVMe PCIe 5.0 RAID</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Certification</div><div class="spec-val">ISV certified (AutoCAD, Maya, SolidWorks)</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">ราคา</div><div class="spec-val">80,000฿ – 1,000,000฿+</div></div>'+
+    '</div>'+
+    '<div class="table-wrap" style="margin:8px 0 12px"><table>'+
+    '<tr><th>รุ่น</th><th>CPU</th><th>RAM Max</th><th>Use Case</th></tr>'+
+    '<tr><td>HP Z8 Fury G5</td><td>Xeon W9-3595X</td><td>2TB ECC</td><td>VFX / AI Training</td></tr>'+
+    '<tr><td>Dell Precision T7960</td><td>Dual Xeon W / EPYC</td><td>4TB ECC</td><td>Simulation / CAE</td></tr>'+
+    '<tr><td>Lenovo ThinkStation P8</td><td>Ryzen Threadripper PRO</td><td>1TB ECC</td><td>Creator / Engineering</td></tr>'+
+    '<tr><td>ASUS ProArt Station</td><td>Core Ultra / Ryzen</td><td>192GB DDR5</td><td>Video Edit / 3D</td></tr>'+
+    '</table></div>'+
+
+    '<div class="section-label" style="padding-left:0">🗄️ Tower Server</div>'+
+    '<div class="use-box"><div class="use-lbl">Tower Server vs Rack Server</div><div class="use-val">'+
+    'Tower Server รูปทรง PC tower ทั่วไป ไม่ต้องมี Server Rack · เหมาะ SMB/สำนักงานเล็กที่ไม่มีห้อง Data Center · ใช้ ECC RAM, RAID controller, Redundant PSU เหมือน Rack server · ย้ายไปใส่ Rack ได้ (Tower-to-Rack kit) เมื่อขยาย'+
+    '</div></div>'+
+    '<div class="chip-wrap"><span class="chip">Dell PowerEdge T550</span><span class="chip">HPE ProLiant ML350</span><span class="chip">Lenovo ThinkSystem ST650</span><span class="chip">Supermicro SuperServer</span></div>'+
+
+    '<div class="sales-strip" style="margin-top:10px"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">'+
+    'Mini PC เหมาะแทน PC เก่าในออฟฟิศ — ลดพื้นที่ + ลดค่าไฟ · AIO ขายได้ง่ายกับ Reception/Front desk ที่เน้นความสวยงาม · Workstation Desktop ต้องถามว่าใช้ซอฟต์แวร์อะไร (AutoCAD ต้องการ ISV certified) · Tower Server เหมาะ SMB ที่ยังไม่มี rack room'+
+    '</div></div>';
+  }},
+  'notebook-types':{t:'Notebook ประเภทต่างๆ',s:'Ultrabook · Business · Gaming · Workstation · 2-in-1 · Chromebook',body:function(){
+    return '<div class="section-label" style="padding-left:0">ภาพรวมประเภท Notebook</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>ประเภท</th><th>น้ำหนัก</th><th>Battery</th><th>Performance</th><th>เหมาะกับ</th></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">Ultrabook/Thin & Light</span></td><td>&lt;1.5 kg</td><td>10–18ชม</td><td>กลาง</td><td>Executive, Mobile worker</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">Business/Corporate</span></td><td>1.3–1.8 kg</td><td>8–14ชม</td><td>กลาง-สูง</td><td>Office, Enterprise จัดซื้อ</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--amd-bg);color:var(--amd-text)">Gaming</span></td><td>2–3 kg</td><td>2–5ชม</td><td>สูง</td><td>Gamer, Content creator เบา</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--amd-bg);color:var(--amd-text)">Mobile Workstation</span></td><td>2–3.5 kg</td><td>3–6ชม</td><td>สูงสุด + ECC</td><td>VFX, CAD, Engineering</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--green-bg);color:var(--green-text)">2-in-1 Convertible</span></td><td>1.2–1.8 kg</td><td>8–14ชม</td><td>กลาง</td><td>Flexible หมุน/ถอดจอ</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--green-bg);color:var(--green-text)">2-in-1 Detachable</span></td><td>0.9–1.4 kg</td><td>8–12ชม</td><td>กลาง</td><td>Tablet + Keyboard</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--amber-bg);color:var(--amber-text)">Rugged</span></td><td>2–3.5 kg</td><td>8–20ชม</td><td>กลาง</td><td>Field work, Military, Oil&Gas</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--badge-neutral);color:var(--badge-neutral-text)">Chromebook</span></td><td>1.2–1.8 kg</td><td>10–15ชม</td><td>ต่ำ</td><td>Education, Web-only tasks</td></tr>'+
+    '</table></div>'+
+
+    '<div class="section-label" style="padding-left:0">💎 Ultrabook / Thin & Light</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">ความหนา</div><div class="spec-val">&lt;15mm — บางกว่านิ้วก้อย</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">CPU</div><div class="spec-val">Intel Core Ultra V / AMD Ryzen e — TDP 15–17W</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">RAM</div><div class="spec-val">Soldered LPDDR5X 16–32GB</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Battery</div><div class="spec-val">10–18ชม real-world</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">จุดขาย</div><div class="spec-val">น้ำหนักเบา แบตทน พกง่าย</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">ราคา</div><div class="spec-val">30,000–80,000฿</div></div>'+
+    '</div>'+
+    '<div class="table-wrap" style="margin:8px 0 12px"><table>'+
+    '<tr><th>รุ่นตัวอย่าง</th><th>น้ำหนัก</th><th>CPU</th><th>จุดเด่น</th></tr>'+
+    '<tr><td>LG Gram 14</td><td>999g</td><td>Core Ultra 7</td><td>เบาสุดในตลาด MIL-SPEC</td></tr>'+
+    '<tr><td>Apple MacBook Air M3</td><td>1.24 kg</td><td>Apple M3</td><td>แบตทน fanless เงียบ</td></tr>'+
+    '<tr><td>ASUS ZenBook S14</td><td>1.2 kg</td><td>Core Ultra 7</td><td>OLED จอสวย บางมาก</td></tr>'+
+    '<tr><td>Dell XPS 13</td><td>1.2 kg</td><td>Core Ultra 7</td><td>Premium compact</td></tr>'+
+    '<tr><td>HP Spectre x360 14</td><td>1.4 kg</td><td>Core Ultra 7</td><td>2-in-1 premium</td></tr>'+
+    '</table></div>'+
+
+    '<div class="section-label" style="padding-left:0;margin-top:4px">💼 Business / Corporate Laptop</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">จุดเด่น</div><div class="spec-val">Durable + Security ระดับ Enterprise</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Security</div><div class="spec-val">TPM 2.0, Fingerprint, IR Camera, SmartCard</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Manageability</div><div class="spec-val">Intel vPro / AMD Pro — remote manage</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Keyboard</div><div class="spec-val">Business keyboard full size + spill resistant</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Port</div><div class="spec-val">RJ-45 · USB-A · HDMI · Thunderbolt</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Warranty</div><div class="spec-val">3 ปี Onsite มาตรฐาน</div></div>'+
+    '</div>'+
+    '<div class="use-box"><div class="use-lbl">Intel vPro / AMD Pro คืออะไร?</div><div class="use-val">'+
+    'Platform สำหรับ Enterprise IT — ช่วยให้ IT Admin remote manage เครื่อง (BIOS level), encrypt drive ระยะไกล, deploy image ผ่าน network ได้แม้เครื่องดับ · จำเป็นสำหรับองค์กรที่มี PC Fleet จำนวนมาก'+
+    '</div></div>'+
+    '<div class="table-wrap" style="margin:8px 0 12px"><table>'+
+    '<tr><th>Brand</th><th>Line</th><th>จุดเด่น</th></tr>'+
+    '<tr><td>Lenovo</td><td>ThinkPad X1/T/L Series</td><td>Keyboard ดีสุด, MIL-SPEC, vPro</td></tr>'+
+    '<tr><td>HP</td><td>EliteBook 800/900 Series</td><td>HP Wolf Security built-in, Sure View</td></tr>'+
+    '<tr><td>Dell</td><td>Latitude 5000/7000/9000</td><td>Dell Optimizer AI, Precision trackpad</td></tr>'+
+    '<tr><td>ASUS</td><td>ExpertBook B9/P Series</td><td>บางเบา ราคาดี</td></tr>'+
+    '<tr><td>Panasonic</td><td>Toughbook CF/FZ Series</td><td>Semi-rugged สำหรับ Field</td></tr>'+
+    '</table></div>'+
+
+    '<div class="section-label" style="padding-left:0;margin-top:4px">🎮 Gaming Laptop</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">CPU</div><div class="spec-val">Core Ultra H/HX · Ryzen H/HX TDP 45–157W</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">GPU</div><div class="spec-val">RTX 5090/5080/5070 · RX 9070</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Display</div><div class="spec-val">144–360Hz · IPS/OLED · G-Sync/FreeSync</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">RAM</div><div class="spec-val">16–32GB DDR5 SO-DIMM (upgrade ได้)</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Cooling</div><div class="spec-val">Vapor chamber · Triple fan</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">ข้อเสีย</div><div class="spec-val">แบต 2–4ชม · หนัก 2.5kg+ · ร้อน</div></div>'+
+    '</div>'+
+    '<div class="table-wrap" style="margin:8px 0 12px"><table>'+
+    '<tr><th>Segment</th><th>GPU</th><th>ราคาโดยประมาณ</th><th>เหมาะกับ</th></tr>'+
+    '<tr><td>Entry Gaming</td><td>RTX 4060 / RX 7600M</td><td>25,000–35,000฿</td><td>1080p gaming เบาๆ</td></tr>'+
+    '<tr><td>Mid Gaming</td><td>RTX 4070 / RX 7700M</td><td>40,000–60,000฿</td><td>1080p–1440p gaming</td></tr>'+
+    '<tr><td>High Gaming</td><td>RTX 5080 / RX 9070</td><td>70,000–100,000฿</td><td>1440p–4K gaming</td></tr>'+
+    '<tr><td>Flagship</td><td>RTX 5090 Max-Q</td><td>100,000–160,000฿</td><td>Desktop replacement</td></tr>'+
+    '</table></div>'+
+    '<div class="chip-wrap"><span class="chip">ASUS ROG Zephyrus</span><span class="chip">ASUS TUF Gaming</span><span class="chip">MSI Raider/Titan</span><span class="chip">Lenovo Legion</span><span class="chip">Acer Predator</span><span class="chip">Razer Blade</span></div>'+
+
+    '<div class="section-label" style="padding-left:0;margin-top:8px">🔬 Mobile Workstation</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">CPU</div><div class="spec-val">Intel Core Ultra HX / Xeon W-series</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">GPU</div><div class="spec-val">NVIDIA RTX 3000/4000/5000 Ada (ECC VRAM)</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">ECC RAM</div><div class="spec-val">ECC SO-DIMM — ป้องกัน bit-flip ข้อมูลสำคัญ</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Display</div><div class="spec-val">DCI-P3 100% / Pantone Validated</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Certification</div><div class="spec-val">ISV: AutoCAD, CATIA, SolidWorks, Maya</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">ราคา</div><div class="spec-val">60,000–250,000฿</div></div>'+
+    '</div>'+
+    '<div class="use-box"><div class="use-lbl">Mobile WS vs Gaming Laptop ต่างกันอย่างไร?</div><div class="use-val">'+
+    'GPU Mobile WS = Quadro/RTX Professional มี ECC VRAM + ISV Certified driver ให้ความเสถียรสูงกว่า · GPU Gaming = GeForce ไม่มี ECC ไม่ได้ ISV certified · ECC ป้องกัน rendering error ที่ทำให้ไฟล์ชิ้นงาน CAD/VFX เสียหาย'+
+    '</div></div>'+
+    '<div class="table-wrap" style="margin:8px 0 12px"><table>'+
+    '<tr><th>รุ่น</th><th>GPU</th><th>เหมาะกับ</th></tr>'+
+    '<tr><td>HP ZBook Fury 16 G11</td><td>RTX 5000 Ada</td><td>VFX, Simulation, AI</td></tr>'+
+    '<tr><td>Dell Precision 7780</td><td>RTX 4000/5000 Ada</td><td>CAD, CAE, VFX</td></tr>'+
+    '<tr><td>Lenovo ThinkPad P16</td><td>RTX 3500/4500 Ada</td><td>Engineering, Data Science</td></tr>'+
+    '<tr><td>ASUS ProArt Studiobook</td><td>RTX 4090</td><td>Creator, 3D Artist</td></tr>'+
+    '</table></div>'+
+
+    '<div class="section-label" style="padding-left:0;margin-top:4px">🔄 2-in-1 Laptop</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>ประเภท</th><th>การใช้งาน</th><th>ตัวอย่าง</th></tr>'+
+    '<tr><td><span class="bx" style="background:var(--green-bg);color:var(--green-text)">Convertible 360°</span></td><td>หมุนจอ 360° เป็น Tent/Tablet/Stand mode</td><td>HP Spectre x360, Dell XPS 13 2-in-1</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--green-bg);color:var(--green-text)">Detachable</span></td><td>ถอดจอออกใช้เป็น Tablet ได้</td><td>MS Surface Pro, Lenovo IdeaPad Duet</td></tr>'+
+    '</table></div>'+
+    '<div class="use-box"><div class="use-lbl">Stylus / Pen รองรับ</div><div class="use-val">'+
+    'MPP (Microsoft Pen Protocol) — Surface Slim Pen 2 · USI 2.0 — Chromebook · Wacom AES — ASUS/Lenovo · Apple Pencil — iPad (ไม่ใช่ Windows) · Pressure level 4096 = มาตรฐานสำหรับ drawing/note'+
+    '</div></div>'+
+
+    '<div class="section-label" style="padding-left:0;margin-top:4px">🏗️ Rugged / Semi-Rugged</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">MIL-STD-810H</div><div class="spec-val">ทน drop, vibration, humidity, dust, temperature</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">IP Rating</div><div class="spec-val">IP65/IP67 — กันน้ำ กันฝุ่น</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Sunlight readable</div><div class="spec-val">จอ 1000 nits+ อ่านกลางแจ้งได้</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">ใช้กับ</div><div class="spec-val">Field service, Oil&Gas, Military, Logistics, Hospital</div></div>'+
+    '</div>'+
+    '<div class="chip-wrap"><span class="chip">Panasonic Toughbook</span><span class="chip">Dell Latitude Rugged</span><span class="chip">Getac B360</span><span class="chip">Zebra ET Series</span></div>'+
+
+    '<div class="section-label" style="padding-left:0;margin-top:4px">📚 Chromebook</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">OS</div><div class="spec-val">Chrome OS (Linux-based, Google)</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">จุดเด่น</div><div class="spec-val">ราคาถูก boot เร็ว ใช้งาน web-based</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">จุดด้อย</div><div class="spec-val">ไม่รัน Windows app ต้องใช้ Cloud หรือ Web app</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">เหมาะกับ</div><div class="spec-val">Education, Firstline worker, Web-only task</div></div>'+
+    '</div>'+
+
+    '<div class="sales-strip" style="margin-top:10px"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">'+
+    'Business Laptop ถามลูกค้าว่า: (1) ต้องการ vPro remote management ไหม? (2) ต้องการ ECC ไหม? (3) ISV certified ไหม? · Gaming Laptop ขาย upsell ไปหา Mobile WS ได้ ถ้าลูกค้าใช้ 3D/CAD · Rugged มี margin สูงกว่า standard laptop มาก · ThinkPad keyboard ยังคือ best-in-class สำหรับ type-heavy user'+
+    '</div></div>';
+  }},
+  'vm-what':{t:'VM คืออะไร? ทำไมองค์กรต้องใช้?',s:'Virtual Machine — พื้นฐานที่ทุกคนในวงการ IT ต้องรู้',body:function(){
+    return '<div class="use-box"><div class="use-lbl">VM คืออะไร?</div><div class="use-val">'+
+    'Virtual Machine (VM) คือ <strong>"คอมพิวเตอร์เสมือน"</strong> ที่ถูกสร้างขึ้นโดยซอฟต์แวร์บน Server จริงเครื่องเดียว เปรียบได้กับการแบ่งบ้านหลังใหญ่หลังเดียวออกเป็นหลายห้องเช่า — แต่ละห้องมี CPU, RAM, Storage ของตัวเอง และแต่ละ VM ไม่รู้จักกัน ทำงานเป็นอิสระ</div></div>'+
+    '<div class="section-label" style="padding-left:0">ทำไมองค์กรถึงใช้ VM?</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>ปัญหาเดิม (ไม่มี VM)</th><th>ประโยชน์ที่ได้ (มี VM)</th></tr>'+
+    '<tr><td>Server 1 เครื่อง = 1 OS = 1 แอป</td><td>Server 1 เครื่อง = VM 20+ ตัว</td></tr>'+
+    '<tr><td>CPU/RAM ถูกใช้งานแค่ 5–10%</td><td>ใช้ทรัพยากรได้ 70–80%</td></tr>'+
+    '<tr><td>จะย้าย Server ต้องดาวน์</td><td>Live Migration ย้ายได้ไม่ดับเครื่อง</td></tr>'+
+    '<tr><td>Server พัง ระบบล่มทั้งหมด</td><td>HA Auto-failover ย้าย VM อัตโนมัติ</td></tr>'+
+    '<tr><td>Backup ยาก ใช้เวลานาน</td><td>Snapshot VM ได้ใน 1 นาที</td></tr>'+
+    '<tr><td>ทดสอบบน Server Production</td><td>Clone VM สร้าง Dev/Test แยก</td></tr>'+
+    '</table></div>'+
+    '<div class="section-label" style="padding-left:0">VM ใช้ทำอะไรในองค์กร?</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">🗄️ File Server</div><div class="spec-val">Windows Server + Shared Drive สำหรับพนักงาน</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">📧 Email Server</div><div class="spec-val">MS Exchange / Zimbra รับ-ส่งอีเมลองค์กร</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">🌐 Web Server</div><div class="spec-val">IIS / Apache / NGINX รัน website บริษัท</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">🗃️ Database</div><div class="spec-val">MS SQL / Oracle / MySQL แยก VM ต่างหาก</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">🔐 Domain Controller</div><div class="spec-val">Active Directory จัดการ user login ทั้งบริษัท</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">💻 VDI / Remote Desktop</div><div class="spec-val">พนักงาน WFH ต่อเข้า Virtual Desktop</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">🧪 Dev / Test</div><div class="spec-val">นักพัฒนาทดสอบ app บน VM แยก</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">🔒 Security / FW</div><div class="spec-val">Virtual Firewall / IDS รันเป็น VM</div></div>'+
+    '</div>'+
+    '<div class="section-label" style="padding-left:0;margin-top:4px">เปรียบเทียบ Physical vs Virtual</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th></th><th>Physical Server</th><th>Virtual Machine</th></tr>'+
+    '<tr><td>ความเร็ว deploy</td><td>สัปดาห์ (จัดซื้อ)</td><td>นาที (clone)</td></tr>'+
+    '<tr><td>ต้นทุน</td><td>สูง (hardware per app)</td><td>ต่ำกว่า (share hardware)</td></tr>'+
+    '<tr><td>การใช้ทรัพยากร</td><td>5–15%</td><td>60–80%</td></tr>'+
+    '<tr><td>Backup/Recovery</td><td>ยาก ช้า</td><td>Snapshot นาที</td></tr>'+
+    '<tr><td>HA / Failover</td><td>ต้องซื้อ hardware เพิ่ม</td><td>Built-in ใน hypervisor</td></tr>'+
+    '<tr><td>เหมาะกับ</td><td>DB I/O สูง, Bare-metal performance</td><td>แอปทั่วไป, Dev/Test, VDI</td></tr>'+
+    '</table></div>'+
+    '<div class="sales-strip"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">'+
+    'ลูกค้าที่ยัง run แอปแยก Physical ทุกตัว = โอกาสขาย Virtualization ชัดเจน · ROI ชัดเจน: Server 1 เครื่อง แทน 10–20 physical server เก่า · จุดขายหลัก: ลดค่า hardware, ลดค่าไฟ, เพิ่ม agility'+
+    '</div></div>';
+  }},
+  'vm-license':{t:'Windows Server Licensing',s:'Standard · Datacenter · CAL · Core · CSP · SA',body:function(){
+    return '<div class="section-label" style="padding-left:0">Edition เปรียบเทียบ</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>Edition</th><th>VM ที่รวมอยู่</th><th>เหมาะกับ</th><th>ราคาโดยประมาณ</th></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">Essentials</span></td><td>ไม่รองรับ VM (bare-metal)</td><td>SMB ≤25 user ไม่มี VM</td><td>~15,000฿</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">Standard</span></td><td>2 VM per license</td><td>Server ทั่วไป VM น้อย</td><td>~50,000฿/16-core</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--green-bg);color:var(--green-text)">Datacenter</span></td><td>Unlimited VM</td><td>Virtualization เต็มรูปแบบ</td><td>~200,000฿/16-core</td></tr>'+
+    '</table></div>'+
+    '<div class="section-label" style="padding-left:0">Core-based Licensing</div>'+
+    '<div class="use-box"><div class="use-lbl">หลักการ</div><div class="use-val">'+
+    'Windows Server 2022 ขาย <strong>per 2-core pack</strong> (minimum 16 cores/server)<br>'+
+    'ตัวอย่าง: Server มี 32 core → ต้องซื้อ 32÷2 = 16 packs = 2 Standard License<br>'+
+    'Standard 2 License = 2 VM เท่านั้น → ถ้าต้องการ 4 VM ต้องซื้อ 4 Standard<br>'+
+    '<strong>เมื่อ VM มาก → Datacenter คุ้มกว่าเสมอ (ตั้งแต่ 4–5 VM ขึ้นไป)</strong>'+
+    '</div></div>'+
+    '<div class="section-label" style="padding-left:0">CAL — Client Access License</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>ประเภท CAL</th><th>ขอบเขต</th><th>เหมาะกับ</th></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">User CAL</span></td><td>1 user ต่อได้ทุก device</td><td>User ใช้หลายเครื่อง (WFH)</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--intel-bg);color:var(--intel-text)">Device CAL</span></td><td>1 device หลาย user ใช้ได้</td><td>PC Kiosk, Shift work</td></tr>'+
+    '<tr><td><span class="bx" style="background:var(--amber-bg);color:var(--amber-text)">RDS CAL</span></td><td>Remote Desktop Services</td><td>VDI / Remote Desktop</td></tr>'+
+    '</table></div>'+
+    '<div class="section-label" style="padding-left:0">Licensing Models</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">Perpetual (Perpetual)</div><div class="spec-val">ซื้อครั้งเดียว ใช้ได้ตลอด ไม่มี update ใหม่</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">SA (Software Assurance)</div><div class="spec-val">ต่ออายุ 3 ปี รับ version ใหม่ได้</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">CSP (Cloud Solution Provider)</div><div class="spec-val">Subscription รายเดือน/ปี ยืดหยุ่น</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">OEM</div><div class="spec-val">ติดกับ hardware ย้ายไม่ได้</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Volume (EA/Open)</div><div class="spec-val">Enterprise Agreement สำหรับ 250+ user</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Azure Hybrid Benefit</div><div class="spec-val">มี SA → ใช้ license บน Azure ได้</div></div>'+
+    '</div>'+
+    '<div class="section-label" style="padding-left:0;margin-top:4px">License ที่เกี่ยวข้องกับ Virtualization</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>Product</th><th>License</th><th>หมายเหตุ</th></tr>'+
+    '<tr><td>VMware vSphere Std</td><td>Per CPU socket</td><td>Post-Broadcom: เปลี่ยนเป็น VCF subscription</td></tr>'+
+    '<tr><td>VMware vCenter</td><td>Per vCenter instance</td><td>รวมใน VCF แล้ว</td></tr>'+
+    '<tr><td>Hyper-V</td><td>ฟรี ใน Windows Server</td><td>จำนวน VM ขึ้นกับ WS edition</td></tr>'+
+    '<tr><td>Proxmox VE</td><td>Free / Subscription support</td><td>OSS ไม่มีค่า license</td></tr>'+
+    '<tr><td>Nutanix AOS</td><td>Per node (subscription)</td><td>รวม AHV hypervisor</td></tr>'+
+    '<tr><td>Microsoft SQL Server</td><td>Per core / Server+CAL</td><td>บน VM: ต้องนับ core ของ host</td></tr>'+
+    '</table></div>'+
+    '<div class="sales-strip"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">'+
+    'Standard vs Datacenter break-even ที่ประมาณ 4–5 VM บน server เดียว · ลูกค้าที่มี perpetual WS+SA สามารถ use Azure Hybrid Benefit ลดค่าใช้จ่าย Azure ได้ชัดเจน · CSP เหมาะ SMB ที่ไม่อยากซื้อ perpetual license ราคาแพง'+
+    '</div></div>';
+  }},
+  'vm-sizing':{t:'VM Sizing & Infrastructure Design',s:'vCPU · vRAM · Storage · HA · Cluster design',body:function(){
+    return '<div class="section-label" style="padding-left:0">Overcommit Ratio — หลักการ</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>Resource</th><th>Safe Ratio</th><th>Maximum</th><th>หมายเหตุ</th></tr>'+
+    '<tr><td>vCPU : pCPU</td><td>4:1</td><td>8:1</td><td>Mixed workload, ไม่ CPU-heavy ตลอดเวลา</td></tr>'+
+    '<tr><td>vRAM : pRAM</td><td>1:1 (ไม่ควร overcommit)</td><td>1.2:1</td><td>RAM overcommit ทำให้ swap → ช้ามาก</td></tr>'+
+    '<tr><td>vStorage (thin)</td><td>2:1</td><td>3:1</td><td>Thin provision ประหยัด แต่ต้อง monitor</td></tr>'+
+    '</table></div>'+
+    '<div class="section-label" style="padding-left:0">Sizing Formula</div>'+
+    '<div class="use-box"><div class="use-lbl">ตัวอย่างการ Size Cluster (50 VM)</div><div class="use-val">'+
+    '<strong>ต้องการ:</strong> VM 50 ตัว เฉลี่ย vCPU 4, RAM 16GB, Disk 200GB<br>'+
+    '<strong>vCPU total:</strong> 50 × 4 = 200 vCPU ÷ ratio 4:1 = 50 pCPU<br>'+
+    '<strong>RAM total:</strong> 50 × 16GB = 800GB RAM (ไม่ overcommit)<br>'+
+    '<strong>Storage:</strong> 50 × 200GB = 10TB (thin) เผื่อ × 1.3 = 13TB<br>'+
+    '<strong>HA N+1:</strong> ต้องทนสูญเสีย 1 node → แต่ละ node แบกได้ 100% workload<br>'+
+    '<strong>ผลลัพธ์:</strong> 3 node × 18 pCPU × 300GB RAM / node (เผื่อ N+1)'+
+    '</div></div>'+
+    '<div class="section-label" style="padding-left:0">HA Design Patterns</div>'+
+    '<div class="spec-grid">'+
+    '<div class="spec-card"><div class="spec-lbl">N+1 (HA พื้นฐาน)</div><div class="spec-val">3 node → ทน 1 node fail, workload ย้ายไป 2 node ที่เหลือ</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">N+2 (High Availability)</div><div class="spec-val">4 node → ทน 2 node fail พร้อมกัน</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">Stretched Cluster</div><div class="spec-val">ข้าม 2 Data center, Metro distance ≤100km</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">DRS Auto-balance</div><div class="spec-val">VMware DRS ย้าย VM ไปหา node ที่ว่างอัตโนมัติ</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">vMotion / Live Migration</div><div class="spec-val">ย้าย VM ระหว่าง node ไม่ดับ — ต้องการ shared storage</div></div>'+
+    '<div class="spec-card"><div class="spec-lbl">FT (Fault Tolerance)</div><div class="spec-val">VM shadow mirror real-time — 0 downtime แม้ node fail</div></div>'+
+    '</div>'+
+    '<div class="section-label" style="padding-left:0;margin-top:4px">Storage สำหรับ VM</div>'+
+    '<div class="table-wrap" style="margin:0 0 12px"><table>'+
+    '<tr><th>ประเภท</th><th>Protocol</th><th>เหมาะกับ</th><th>ข้อดี/ข้อเสีย</th></tr>'+
+    '<tr><td>SAN FC</td><td>Fibre Channel</td><td>Enterprise DB, Mission Critical</td><td>Fast/Expensive</td></tr>'+
+    '<tr><td>SAN iSCSI</td><td>TCP/IP</td><td>VM shared storage SMB-Enterprise</td><td>ถูกกว่า FC ยังดี</td></tr>'+
+    '<tr><td>NFS</td><td>TCP/IP</td><td>VM datastore (VMware/KVM)</td><td>ง่าย config / latency สูงกว่า block</td></tr>'+
+    '<tr><td>HCI (vSAN/Nutanix)</td><td>Internal cluster</td><td>Hyperconverged ไม่ต้องการ SAN</td><td>Scale-out ง่าย / ราคาเริ่มสูง</td></tr>'+
+    '</table></div>'+
+    '<div class="sales-strip"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">'+
+    'RAM ห้าม overcommit เด็ดขาดสำหรับ production — swap ทำให้ทุก VM ช้าลง · HCI (vSAN/Nutanix) เหมาะลูกค้าที่อยากลดความซับซ้อนของ SAN · Minimum cluster 3 node เสมอ — 2 node ทำ HA ไม่ได้จริง'+
+    '</div></div>';
+  }},
+  'vm-concept':{t:'Hypervisor & VM Architecture',s:'Type 1 vs Type 2 · vCPU · vRAM · Snapshot',body:function(){return '<div class="spec-grid"><div class="spec-card"><div class="spec-lbl">Type 1 — Bare-metal</div><div class="spec-val">รันตรงบน hardware ไม่มี Host OS</div></div><div class="spec-card"><div class="spec-lbl">Type 2 — Hosted</div><div class="spec-val">รันบน OS host เช่น VirtualBox บน Windows</div></div><div class="spec-card"><div class="spec-lbl">vCPU</div><div class="spec-val">Virtual CPU จาก physical core</div></div><div class="spec-card"><div class="spec-lbl">vRAM</div><div class="spec-val">Allocated RAM ต่อ VM</div></div><div class="spec-card"><div class="spec-lbl">vDisk</div><div class="spec-val">VMDK / VHD / QCOW2 file</div></div><div class="spec-card"><div class="spec-lbl">vNIC</div><div class="spec-val">Virtual Network Interface Card</div></div><div class="spec-card"><div class="spec-lbl">Live Migration</div><div class="spec-val">ย้าย VM ข้าม host ไม่ดับเครื่อง</div></div><div class="spec-card"><div class="spec-lbl">Snapshot</div><div class="spec-val">บันทึก state VM ณ จุดใดจุดหนึ่ง</div></div><div class="spec-card"><div class="spec-lbl">Overcommit vCPU</div><div class="spec-val">vCPU > pCPU (4:1 safe ratio)</div></div><div class="spec-card"><div class="spec-lbl">Thin Provision</div><div class="spec-val">disk โต lazily ประหยัด space</div></div></div><div class="use-box"><div class="use-lbl">Type 1 — Production</div><div class="use-val">ESXi (VMware) · Hyper-V (Microsoft) · KVM/Proxmox (Linux) · Nutanix AHV · XCP-ng</div></div><div class="use-box"><div class="use-lbl">Type 2 — Dev/Test/Lab</div><div class="use-val">VirtualBox (Oracle, ฟรี) · VMware Workstation/Fusion · Parallels (Mac)</div></div><div class="note-box">ข้อแตกต่างสำคัญ: Type 1 hypervisor มี performance ดีกว่า Type 2 เพราะไม่มี Host OS คั่นกลาง overhead น้อยกว่า 2–5%</div><div class="sales-strip"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">Production ใช้ Type 1 เสมอ · Type 2 เหมาะ test/dev เท่านั้น · vCPU Overcommit 4:1 ปลอดภัยสำหรับ mixed workload · RAM ไม่ควร overcommit — ทำให้เกิด balloon/swap ช้ามาก</div></div>';}},
   'vmware':{t:'VMware vSphere',s:'ESXi + vCenter + vSAN + NSX-T',body:function(){return '<div class="spec-grid"><div class="spec-card"><div class="spec-lbl">Hypervisor</div><div class="spec-val">ESXi (Type 1)</div></div><div class="spec-card"><div class="spec-lbl">Management</div><div class="spec-val">vCenter Server</div></div><div class="spec-card"><div class="spec-lbl">Storage HCI</div><div class="spec-val">vSAN (Flash/HDD)</div></div><div class="spec-card"><div class="spec-lbl">Network SDN</div><div class="spec-val">NSX-T micro-seg</div></div><div class="spec-card"><div class="spec-lbl">HA/DRS/FT</div><div class="spec-val">Auto failover+balance</div></div><div class="spec-card"><div class="spec-lbl">Migration</div><div class="spec-val">vMotion zero downtime</div></div></div><div class="chip-wrap"><span class="chip">VCF bundle</span><span class="chip">Tanzu K8s</span><span class="chip">Aria Monitor</span><span class="chip">Horizon VDI</span></div><div class="use-box" style="margin-top:10px"><div class="use-lbl">⚠️ ข้อควรระวัง</div><div class="use-val">หลัง Broadcom เข้าซื้อ เปลี่ยนเป็น subscription ราคาสูงขึ้น 3–5× หลายองค์กรพิจารณาย้ายไป Hyper-V, Proxmox, Nutanix</div></div><div class="sales-strip"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">VCF bundle ทุก product — ต้องเปรียบ TCO กับ Hyper-V+Azure Stack HCI · ลูกค้า VMware เก่าอาจต้องการ migration path</div></div>';}},
   'hyperv':{t:'Microsoft Hyper-V',s:'Windows Server 2022 · Azure Stack HCI',body:function(){return '<div class="spec-grid"><div class="spec-card"><div class="spec-lbl">Hypervisor</div><div class="spec-val">Hyper-V (Type 1)</div></div><div class="spec-card"><div class="spec-lbl">Management</div><div class="spec-val">WAC / SCVMM</div></div><div class="spec-card"><div class="spec-lbl">Cluster</div><div class="spec-val">Windows Failover Cluster</div></div><div class="spec-card"><div class="spec-lbl">Storage</div><div class="spec-val">S2D (Storage Spaces Direct)</div></div><div class="spec-card"><div class="spec-lbl">License</div><div class="spec-val">รวมใน Windows Server</div></div><div class="spec-card"><div class="spec-lbl">Cloud hybrid</div><div class="spec-val">Azure Arc integration</div></div></div><div class="chip-wrap"><span class="chip">Azure Stack HCI 23H2</span><span class="chip">Azure Arc</span><span class="chip">Windows Admin Center</span></div><div class="sales-strip" style="margin-top:10px"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">ฟรีกับ Windows Server License — เหมาะองค์กร Microsoft ecosystem · ประหยัดค่า VMware ได้ชัดเจน · Azure Stack HCI รองรับ hybrid cloud ดี</div></div>';}},
   'kvm':{t:'KVM / Proxmox / OpenStack',s:'Open source — Linux native hypervisor',body:function(){return '<div class="spec-grid"><div class="spec-card"><div class="spec-lbl">Hypervisor</div><div class="spec-val">KVM (Linux kernel)</div></div><div class="spec-card"><div class="spec-lbl">GUI</div><div class="spec-val">Proxmox VE (web UI)</div></div><div class="spec-card"><div class="spec-lbl">Storage</div><div class="spec-val">Ceph / NFS / ZFS</div></div><div class="spec-card"><div class="spec-lbl">Container</div><div class="spec-val">LXC + KVM mixed</div></div><div class="spec-card"><div class="spec-lbl">Network</div><div class="spec-val">OVS / Linux bridge</div></div><div class="spec-card"><div class="spec-lbl">License</div><div class="spec-val">Open source ฟรี</div></div></div><div class="chip-wrap"><span class="chip">Proxmox VE 8</span><span class="chip">oVirt</span><span class="chip">OpenStack</span><span class="chip">RHEV/RHVH</span></div><div class="sales-strip" style="margin-top:10px"><div class="sales-lbl">💡 เซลล์ควรรู้</div><div class="sales-val">KVM = Hypervisor หลักของ AWS/GCP · ต้องการ Admin Linux ทักษะสูง · Proxmox เหมาะ SMB/Tech company ที่ต้องการ OSS alternative ต้นทุนต่ำ</div></div>';}},
