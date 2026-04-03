@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="820" viewBox="0 0 1600 820" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF2FF"/>
+      <stop offset="1" stop-color="#F7FBFF"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1A6EFF"/>
+      <stop offset="1" stop-color="#7B61FF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0FA66B"/>
+      <stop offset="1" stop-color="#26C281"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="2000" height="1200" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#1A244010"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="820" rx="36" fill="url(#bg)"/>
+  <rect x="56" y="52" width="1488" height="716" rx="30" fill="#FFFFFF" stroke="#D9E6FF"/>
+  <text x="88" y="118" fill="#0F172A" font-family="IBM Plex Sans Thai, sans-serif" font-size="46" font-weight="700">Foundation Overview — เข้าใจ Hardware ให้คุยกับลูกค้าได้เร็ว</text>
+  <text x="88" y="164" fill="#475569" font-family="IBM Plex Sans Thai, sans-serif" font-size="24">จากโจทย์ธุรกิจ → เลือก platform → อธิบายสเปกสำคัญ → ปิดดีลด้วยเหตุผลที่ลูกค้าเข้าใจ</text>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="220" width="320" height="236" rx="24" fill="#F8FBFF" stroke="#D7E6FF"/>
+    <rect x="450" y="220" width="320" height="236" rx="24" fill="#FBFAFF" stroke="#E5DFFF"/>
+    <rect x="810" y="220" width="320" height="236" rx="24" fill="#F6FFFB" stroke="#D8F5EA"/>
+    <rect x="1170" y="220" width="320" height="236" rx="24" fill="#FFF9F1" stroke="#F6E4C6"/>
+  </g>
+
+  <rect x="110" y="248" width="72" height="72" rx="20" fill="url(#chip)"/>
+  <rect x="470" y="248" width="72" height="72" rx="20" fill="#7B61FF"/>
+  <rect x="830" y="248" width="72" height="72" rx="20" fill="url(#accent)"/>
+  <rect x="1190" y="248" width="72" height="72" rx="20" fill="#F08C00"/>
+
+  <g stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="126" y="264" width="40" height="40" rx="8"/>
+    <rect x="138" y="276" width="16" height="16" rx="3"/>
+    <path d="M128 255v9M146 255v9M164 255v9M128 304v9M146 304v9M164 304v9M117 275h9M117 293h9M168 275h9M168 293h9"/>
+
+    <rect x="487" y="266" width="40" height="30" rx="6"/>
+    <path d="M502 296v12M490 308h34"/>
+    <rect x="495" y="274" width="24" height="14" rx="2"/>
+
+    <ellipse cx="866" cy="276" rx="22" ry="10"/>
+    <path d="M844 276v18c0 5 10 10 22 10s22-5 22-10v-18"/>
+    <path d="M844 294v18c0 5 10 10 22 10s22-5 22-10v-18"/>
+
+    <rect x="1212" y="266" width="28" height="38" rx="6"/>
+    <path d="M1220 256h12M1226 304v10"/>
+    <path d="M1233 266c6 3 8 7 8 12 0 6-3 10-8 13"/>
+  </g>
+
+  <text x="110" y="354" fill="#0F172A" font-family="IBM Plex Sans Thai, sans-serif" font-size="30" font-weight="700">Compute Core</text>
+  <text x="110" y="392" fill="#475569" font-family="IBM Plex Sans Thai, sans-serif" font-size="22">CPU, GPU, Mainboard, RAM</text>
+  <text x="110" y="428" fill="#64748B" font-family="IBM Plex Sans Thai, sans-serif" font-size="20">ตอบคำถามว่าเครื่องนี้แรงพอไหม</text>
+
+  <text x="470" y="354" fill="#0F172A" font-family="IBM Plex Sans Thai, sans-serif" font-size="30" font-weight="700">Device Type</text>
+  <text x="470" y="392" fill="#475569" font-family="IBM Plex Sans Thai, sans-serif" font-size="22">Desktop, Mini PC, Notebook, WS</text>
+  <text x="470" y="428" fill="#64748B" font-family="IBM Plex Sans Thai, sans-serif" font-size="20">ตอบโจทย์การใช้งานและงบประมาณ</text>
+
+  <text x="830" y="354" fill="#0F172A" font-family="IBM Plex Sans Thai, sans-serif" font-size="30" font-weight="700">Data Layer</text>
+  <text x="830" y="392" fill="#475569" font-family="IBM Plex Sans Thai, sans-serif" font-size="22">NVMe, SSD, HDD, NAS, SAN</text>
+  <text x="830" y="428" fill="#64748B" font-family="IBM Plex Sans Thai, sans-serif" font-size="20">ตอบคำถามว่าเร็วแค่ไหนและเก็บได้นานไหม</text>
+
+  <text x="1190" y="354" fill="#0F172A" font-family="IBM Plex Sans Thai, sans-serif" font-size="30" font-weight="700">Power & Cooling</text>
+  <text x="1190" y="392" fill="#475569" font-family="IBM Plex Sans Thai, sans-serif" font-size="22">PSU, UPS, Thermal Design</text>
+  <text x="1190" y="428" fill="#64748B" font-family="IBM Plex Sans Thai, sans-serif" font-size="20">ทำให้ระบบเสถียร ใช้งานได้จริง</text>
+
+  <path d="M410 338H450" stroke="#B8C8F6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M770 338H810" stroke="#CDBCF7" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1130 338H1170" stroke="#B7E8D2" stroke-width="6" stroke-linecap="round"/>
+
+  <rect x="90" y="510" width="1400" height="200" rx="24" fill="#0F172A"/>
+  <text x="126" y="566" fill="#FFFFFF" font-family="IBM Plex Sans Thai, sans-serif" font-size="28" font-weight="700">วิธีคุยแบบง่ายเหมือน web app ชั้นนำ</text>
+  <text x="126" y="608" fill="#CBD5E1" font-family="IBM Plex Sans Thai, sans-serif" font-size="22">1) ถาม workload  2) map ไปที่ platform  3) สรุปเป็นภาษาธุรกิจ  4) เสริมเหตุผลทางเทคนิค</text>
+
+  <rect x="124" y="636" width="302" height="42" rx="18" fill="#1A6EFF"/>
+  <rect x="450" y="636" width="302" height="42" rx="18" fill="#7B61FF"/>
+  <rect x="776" y="636" width="302" height="42" rx="18" fill="#0FA66B"/>
+  <rect x="1102" y="636" width="302" height="42" rx="18" fill="#F08C00"/>
+  <text x="148" y="664" fill="#FFFFFF" font-family="IBM Plex Sans Thai, sans-serif" font-size="20" font-weight="600">Office / ERP / Browser → CPU + RAM ก่อน</text>
+  <text x="474" y="664" fill="#FFFFFF" font-family="IBM Plex Sans Thai, sans-serif" font-size="20" font-weight="600">Creator / CAD → GPU + ECC + Display</text>
+  <text x="800" y="664" fill="#FFFFFF" font-family="IBM Plex Sans Thai, sans-serif" font-size="20" font-weight="600">AI / Data → VRAM + Storage + Cooling</text>
+  <text x="1126" y="664" fill="#FFFFFF" font-family="IBM Plex Sans Thai, sans-serif" font-size="20" font-weight="600">SMB Infra → UPS + NAS + Reliability</text>
+</svg>

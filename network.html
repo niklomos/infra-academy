@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body data-default-page="found">
+<body data-default-page="net">
 
 <div class="app-wrapper">
   <!-- SIDEBAR (desktop only) -->
@@ -257,7 +257,7 @@
 
         <!-- NETWORK PAGE -->
         <div id="page-net" class="page page-pad">
-          <div class="section-label">Network</div>
+          <div class="hero-panel"><img class="hero-media" src="assets/img/network-overview.svg" alt="Network overview diagram"><div class="hero-body"><div class="hero-title">Network ที่คุยได้ทั้งภาษาธุรกิจและภาษาวิศวกร</div><div class="hero-desc">Network ไม่ใช่แค่เรื่องความเร็ว แต่เป็นรากฐานของ user experience, ความปลอดภัย และความพร้อมใช้งานของทุกระบบในองค์กร</div><div class="hero-grid"><div class="hero-card"><h4>Sales ควรถามลูกค้า</h4><ul><li>มีหลายสาขาไหม และใช้ MPLS, Internet หรือ SD-WAN อยู่</li><li>ระบบสำคัญคือ voice, video, ERP หรือ cloud app อะไรบ้าง</li><li>เจอปัญหาเน็ตช้าเป็นช่วงเวลา, Wi-Fi dead spot หรือ packet loss บ่อยไหม</li></ul></div><div class="hero-card"><h4>Engineer ควรเช็ก</h4><ul><li>Broadcast domain ใหญ่เกินไปหรือยังไม่ได้ทำ segmentation หรือไม่</li><li>Routing, ACL, QoS และ uplink redundancy ครบหรือยัง</li><li>WLAN survey, channel plan และ PoE budget เพียงพอหรือไม่</li></ul></div></div></div></div><div class="topic-strip"><div class="topic-mini"><div class="topic-mini-title">L2 / L3</div><div class="topic-mini-desc">แยก VLAN และ routing ให้ชัด จะช่วยลดปัญหา broadcast และควบคุม security ได้ง่ายขึ้น</div></div><div class="topic-mini"><div class="topic-mini-title">Wi-Fi 6/7</div><div class="topic-mini-desc">ไม่ใช่แค่เรื่อง throughput แต่รวมถึงจำนวน client, roaming และ latency</div></div><div class="topic-mini"><div class="topic-mini-title">SD-WAN / SASE</div><div class="topic-mini-desc">ใช้เมื่อองค์กรมีหลายสาขา ต้องการ policy เดียวและ visibility จากส่วนกลาง</div></div></div><div class="section-label">Network</div>
           <div class="card-grid">
             <div class="card" onclick="openSheet('osi')"><div class="card-row"><div class="card-icon" style="background:var(--amber-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--amber-text)" stroke-width="1.4"><rect x="2" y="3" width="16" height="2" rx="1"/><rect x="2" y="7" width="16" height="2" rx="1"/><rect x="2" y="11" width="16" height="2" rx="1"/><rect x="2" y="15" width="16" height="2" rx="1"/></svg></div><div class="card-info"><div class="card-title">OSI 7 Layers</div><div class="card-desc">L1–L7 reference model, protocols</div></div><div class="card-chevron">›</div></div></div>
             <div class="card" onclick="openSheet('l2')"><div class="card-row"><div class="card-icon" style="background:var(--amber-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--amber-text)" stroke-width="1.4"><rect x="3" y="7" width="14" height="6" rx="2"/><circle cx="7" cy="10" r="1"/><circle cx="10" cy="10" r="1"/><circle cx="13" cy="10" r="1"/><path d="M7 7V5M10 7V5M13 7V5M7 13v2M10 13v2M13 13v2"/></svg></div><div class="card-info"><div class="card-title">L2 — Switching</div><div class="card-desc">MAC, VLAN 802.1Q, STP, LACP</div></div><div class="card-chevron">›</div></div></div>

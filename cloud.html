@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body data-default-page="found">
+<body data-default-page="cloud">
 
 <div class="app-wrapper">
   <!-- SIDEBAR (desktop only) -->
@@ -270,7 +270,7 @@
 
         <!-- CLOUD PAGE -->
         <div id="page-cloud" class="page page-pad">
-          <div class="section-label">Cloud</div>
+          <div class="hero-panel"><img class="hero-media" src="assets/img/cloud-overview.svg" alt="Cloud overview diagram"><div class="hero-body"><div class="hero-title">Cloud ที่ขายได้จริง และออกแบบได้จริง</div><div class="hero-desc">เนื้อหาส่วนนี้ช่วยให้มองภาพ cloud ตั้งแต่ network, compute, data, HA/DR ไปจนถึง FinOps เพื่อคุยกับทั้งทีมธุรกิจและทีมปฏิบัติการได้ชัดเจนขึ้น</div><div class="hero-grid"><div class="hero-card"><h4>Sales ควรถามลูกค้า</h4><ul><li>ย้ายขึ้น cloud เพื่อ scale, ลด capex หรือทำ DR</li><li>Application ไหนต้อง online 24x7 และระบบไหนยอม downtime ได้</li><li>ปัจจุบันคุม cost ด้วย budget, tag หรือ dashboard อะไรอยู่</li></ul></div><div class="hero-card"><h4>Engineer ควรเช็ก</h4><ul><li>Subnet แยก public/private/data tier หรือยัง</li><li>มี logging, backup, IAM baseline และ security guardrail หรือไม่</li><li>วาง RTO/RPO และ test failover จริงหรือยัง</li></ul></div></div></div></div><div class="topic-strip"><div class="topic-mini"><div class="topic-mini-title">VPC Design</div><div class="topic-mini-desc">โครงสร้าง subnet ที่ดีช่วยลดความเสี่ยงและทำให้ troubleshoot ง่ายมากขึ้น</div></div><div class="topic-mini"><div class="topic-mini-title">HA / DR</div><div class="topic-mini-desc">ต้องเริ่มจากคำถามว่าแอปไหนหยุดไม่ได้ และหยุดได้นานแค่ไหน</div></div><div class="topic-mini"><div class="topic-mini-title">FinOps</div><div class="topic-mini-desc">ไม่มี tag = ไม่มีเจ้าของค่าใช้จ่าย และคุม cost ได้ยาก</div></div></div><div class="section-label">Cloud</div>
           <div class="card-grid">
             <div class="card" onclick="openSheet('vpc')"><div class="card-row"><div class="card-icon" style="background:var(--purple-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--purple-text)" stroke-width="1.4"><rect x="2" y="4" width="16" height="12" rx="2"/><path d="M2 8h16M6 4v4M10 4v4M14 4v4"/></svg></div><div class="card-info"><div class="card-title">VPC & Subnet</div><div class="card-desc">Public/Private/Data tier, SG, NACL</div></div><div class="card-chevron">›</div></div></div>
             <div class="card" onclick="openSheet('cloudlb')"><div class="card-row"><div class="card-icon" style="background:var(--purple-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--purple-text)" stroke-width="1.4"><path d="M10 4v12M4 10h12"/><path d="M6 6l8 8M14 6l-8 8" opacity=".3"/></svg></div><div class="card-info"><div class="card-title">Cloud LB & CDN</div><div class="card-desc">ALB, NLB, CloudFront, WAF, DDoS</div></div><div class="card-chevron">›</div></div></div>

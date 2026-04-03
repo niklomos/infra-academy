@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1200" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#EEF6FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" rx="28" fill="url(#g1)"/>
+  <text x="60" y="86" fill="#0F172A" font-family="IBM Plex Sans Thai, sans-serif" font-size="40" font-weight="700">Platform Decision Map</text>
+  <text x="60" y="128" fill="#475569" font-family="IBM Plex Sans Thai, sans-serif" font-size="22">เลือกเครื่องให้ลูกค้าแบบเร็วและเข้าใจง่าย</text>
+
+  <rect x="60" y="180" width="250" height="210" rx="24" fill="#FFFFFF" stroke="#D9E6FF"/>
+  <rect x="345" y="180" width="250" height="210" rx="24" fill="#FFFFFF" stroke="#E2D8FF"/>
+  <rect x="630" y="180" width="250" height="210" rx="24" fill="#FFFFFF" stroke="#D6F3E8"/>
+  <rect x="915" y="180" width="225" height="210" rx="24" fill="#FFFFFF" stroke="#F8E2C1"/>
+
+  <text x="88" y="236" fill="#1A6EFF" font-family="IBM Plex Sans Thai, sans-serif" font-size="28" font-weight="700">Mini PC</text>
+  <text x="88" y="278" fill="#334155" font-family="IBM Plex Sans Thai, sans-serif" font-size="21">งาน Office / Signage / POS</text>
+  <text x="88" y="316" fill="#64748B" font-family="IBM Plex Sans Thai, sans-serif" font-size="20">เด่น: เล็ก ประหยัดไฟ ติดตั้งง่าย</text>
+  <text x="88" y="352" fill="#64748B" font-family="IBM Plex Sans Thai, sans-serif" font-size="20">ข้อจำกัด: upgrade น้อย ไม่มี dGPU</text>
+
+  <text x="373" y="236" fill="#7B61FF" font-family="IBM Plex Sans Thai, sans-serif" font-size="28" font-weight="700">Notebook</text>
+  <text x="373" y="278" fill="#334155" font-family="IBM Plex Sans Thai, sans-serif" font-size="21">งานเดินทาง / Executive / Sales</text>
+  <text x="373" y="316" fill="#64748B" font-family="IBM Plex Sans Thai, sans-serif" font-size="20">เด่น: พกง่าย แบตทน กล้อง/ไมค์พร้อม</text>
+  <text x="373" y="352" fill="#64748B" font-family="IBM Plex Sans Thai, sans-serif" font-size="20">ข้อจำกัด: thermal budget ต่ำกว่า desktop</text>
+
+  <text x="658" y="236" fill="#0FA66B" font-family="IBM Plex Sans Thai, sans-serif" font-size="28" font-weight="700">Desktop / Tower</text>
+  <text x="658" y="278" fill="#334155" font-family="IBM Plex Sans Thai, sans-serif" font-size="21">งานทั่วไป / Creator / Gaming</text>
+  <text x="658" y="316" fill="#64748B" font-family="IBM Plex Sans Thai, sans-serif" font-size="20">เด่น: upgrade ง่าย ใส่ GPU ได้แรง</text>
+  <text x="658" y="352" fill="#64748B" font-family="IBM Plex Sans Thai, sans-serif" font-size="20">ข้อจำกัด: ใช้พื้นที่และไฟมากกว่า</text>
+
+  <text x="943" y="236" fill="#F08C00" font-family="IBM Plex Sans Thai, sans-serif" font-size="28" font-weight="700">Workstation</text>
+  <text x="943" y="278" fill="#334155" font-family="IBM Plex Sans Thai, sans-serif" font-size="21">CAD / 3D / AI / Render</text>
+  <text x="943" y="316" fill="#64748B" font-family="IBM Plex Sans Thai, sans-serif" font-size="20">เด่น: ECC, ISV, GPU Pro</text>
+  <text x="943" y="352" fill="#64748B" font-family="IBM Plex Sans Thai, sans-serif" font-size="20">ข้อจำกัด: ราคาและ spec สูง</text>
+
+  <rect x="60" y="456" width="1080" height="236" rx="24" fill="#0F172A"/>
+  <text x="94" y="518" fill="#FFFFFF" font-family="IBM Plex Sans Thai, sans-serif" font-size="30" font-weight="700">Quick checklist สำหรับ Sales และ Engineer</text>
+  <text x="94" y="566" fill="#D3DCE6" font-family="IBM Plex Sans Thai, sans-serif" font-size="22">Sales: ถาม workload, ระยะเวลาการใช้งาน, upgrade plan, งบต่อ seat</text>
+  <text x="94" y="604" fill="#D3DCE6" font-family="IBM Plex Sans Thai, sans-serif" font-size="22">Engineer: เช็ก socket, RAM type, PSU headroom, thermal, display output, storage growth</text>
+  <text x="94" y="652" fill="#93C5FD" font-family="IBM Plex Sans Thai, sans-serif" font-size="22">Tip: อย่าเริ่มที่รุ่น CPU อย่างเดียว ให้เริ่มที่ use case แล้วค่อย map ไปที่ platform ที่เหมาะ</text>
+</svg>

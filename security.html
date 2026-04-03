@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body data-default-page="found">
+<body data-default-page="sec">
 
 <div class="app-wrapper">
   <!-- SIDEBAR (desktop only) -->
@@ -283,7 +283,7 @@
 
         <!-- SECURITY PAGE -->
         <div id="page-sec" class="page page-pad">
-          <div class="section-label">Security</div>
+          <div class="hero-panel"><img class="hero-media" src="assets/img/security-overview.svg" alt="Security overview diagram"><div class="hero-body"><div class="hero-title">Security ที่เข้าใจทั้งการป้องกันและการตอบสนอง</div><div class="hero-desc">Security ต้องมองเป็นหลายชั้น ตั้งแต่ identity, endpoint, network, monitoring และ compliance เพื่อให้ลดความเสี่ยงได้จริง ไม่ใช่ซื้อแค่กล่องเดียวแล้วจบ</div><div class="hero-grid"><div class="hero-card"><h4>Sales ควรถามลูกค้า</h4><ul><li>มี MFA บังคับทุกคนแล้วหรือยัง โดยเฉพาะ admin และ remote access</li><li>เคยโดน ransomware, phishing หรือ account takeover หรือไม่</li><li>มี requirement PDPA, ISO 27001, PCI DSS หรือ audit ภายในไหม</li></ul></div><div class="hero-card"><h4>Engineer ควรเช็ก</h4><ul><li>Identity source กลาง, log retention และ response workflow ครบไหม</li><li>Endpoint isolate, backup immutable และ recovery test พร้อมหรือไม่</li><li>Segmentation, EDR, SIEM และ alert tuning ทำงานร่วมกันหรือยัง</li></ul></div></div></div></div><div class="topic-strip"><div class="topic-mini"><div class="topic-mini-title">Identity First</div><div class="topic-mini-desc">MFA, SSO และ PAM คือจุดเริ่มที่คุ้มค่าที่สุดในการลดความเสี่ยง</div></div><div class="topic-mini"><div class="topic-mini-title">Detection & Response</div><div class="topic-mini-desc">EDR/XDR + SIEM + SOAR ช่วยลดเวลาจากตรวจเจอจนถึงตอบสนอง</div></div><div class="topic-mini"><div class="topic-mini-title">Compliance</div><div class="topic-mini-desc">มาตรฐานที่ดีทำให้ security เป็นกระบวนการ ไม่ใช่แค่ project ชั่วคราว</div></div></div><div class="section-label">Security</div>
           <div class="card-grid">
             <div class="card" onclick="openSheet('ngfw')"><div class="card-row"><div class="card-icon" style="background:var(--amd-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--amd-text)" stroke-width="1.4"><path d="M10 2l7 3v6c0 4-3 7-7 8-4-1-7-4-7-8V5z"/><path d="M7 10l2 2 4-4"/></svg></div><div class="card-info"><div class="card-title">Firewall & Perimeter</div><div class="card-desc">NGFW, IPS/IDS, DMZ, DDoS</div></div><div class="card-chevron">›</div></div></div>
             <div class="card" onclick="openSheet('zerotrust')"><div class="card-row"><div class="card-icon" style="background:var(--amd-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--amd-text)" stroke-width="1.4"><circle cx="10" cy="8" r="3"/><path d="M4 18c0-3.31 2.69-6 6-6s6 2.69 6 6"/><path d="M16 4l1.5 1.5M18 8h-2"/></svg></div><div class="card-info"><div class="card-title">Zero Trust & IAM</div><div class="card-desc">MFA, PAM, SSO, Micro-segmentation</div></div><div class="card-chevron">›</div></div></div>

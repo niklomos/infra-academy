@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" fill="none">
+  <rect width="1200" height="760" rx="28" fill="#F7FAFC"/>
+  <text x="58" y="82" fill="#0F172A" font-family="IBM Plex Sans Thai, sans-serif" font-size="40" font-weight="700">Hardware Stack ที่ควรอธิบายให้ลูกค้าเห็นภาพ</text>
+  <text x="58" y="122" fill="#475569" font-family="IBM Plex Sans Thai, sans-serif" font-size="22">แยกให้ชัดว่าอะไรทำให้เครื่อง “เร็ว”, “นิ่ง”, และ “ขยายต่อได้”</text>
+
+  <rect x="90" y="180" width="1020" height="92" rx="22" fill="#E8F1FF"/>
+  <rect x="90" y="292" width="1020" height="92" rx="22" fill="#EEEDFE"/>
+  <rect x="90" y="404" width="1020" height="92" rx="22" fill="#E6F9F2"/>
+  <rect x="90" y="516" width="1020" height="92" rx="22" fill="#FFF3DC"/>
+
+  <text x="128" y="236" fill="#0C447C" font-family="IBM Plex Sans Thai, sans-serif" font-size="28" font-weight="700">CPU + GPU</text>
+  <text x="360" y="236" fill="#0F172A" font-family="IBM Plex Sans Thai, sans-serif" font-size="24">ประมวลผล — ตอบคำถามว่า app ต้องใช้ core, clock หรือ VRAM แค่ไหน</text>
+
+  <text x="128" y="348" fill="#534AB7" font-family="IBM Plex Sans Thai, sans-serif" font-size="28" font-weight="700">RAM + Mainboard</text>
+  <text x="360" y="348" fill="#0F172A" font-family="IBM Plex Sans Thai, sans-serif" font-size="24">รองรับ workload — ดูความเข้ากันได้, slot, ECC, และอนาคตการอัปเกรด</text>
+
+  <text x="128" y="460" fill="#085041" font-family="IBM Plex Sans Thai, sans-serif" font-size="28" font-weight="700">Storage</text>
+  <text x="360" y="460" fill="#0F172A" font-family="IBM Plex Sans Thai, sans-serif" font-size="24">ความเร็วเปิดงาน/บูต/อ่านเขียน และ data retention ในระยะยาว</text>
+
+  <text x="128" y="572" fill="#7A4800" font-family="IBM Plex Sans Thai, sans-serif" font-size="28" font-weight="700">Power + Cooling + UPS</text>
+  <text x="360" y="572" fill="#0F172A" font-family="IBM Plex Sans Thai, sans-serif" font-size="24">ทำให้เครื่องใช้งานเสถียร ไม่ throttle และป้องกันความเสียหายจากไฟตกไฟดับ</text>
+
+  <path d="M600 638v40" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M600 676l-16 -16M600 676l16 -16" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <text x="418" y="726" fill="#475569" font-family="IBM Plex Sans Thai, sans-serif" font-size="22">Bottom line: ขาย “ความเหมาะสมของระบบ” ไม่ใช่แค่ตัวเลขสเปก</text>
+</svg>

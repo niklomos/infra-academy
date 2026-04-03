@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body data-default-page="found">
+<body data-default-page="infra">
 
 <div class="app-wrapper">
   <!-- SIDEBAR (desktop only) -->
@@ -241,7 +241,7 @@
 
         <!-- INFRASTRUCTURE PAGE -->
         <div id="page-infra" class="page page-pad">
-          <div class="section-label">Infrastructure — Virtualization</div>
+          <div class="hero-panel"><img class="hero-media" src="assets/img/infra-overview.svg" alt="Infrastructure overview diagram"><div class="hero-body"><div class="hero-title">Infrastructure สำหรับ Sales และ Engineer</div><div class="hero-desc">หมวดนี้อธิบายการออกแบบระบบหลังบ้านขององค์กร ตั้งแต่ virtualization, cluster, storage, container จนถึง CI/CD เพื่อให้คุยกับลูกค้าได้ทั้งมุมธุรกิจและมุมเทคนิค</div><div class="hero-grid"><div class="hero-card"><h4>Sales ควรถามลูกค้า</h4><ul><li>วันนี้มี physical server กี่เครื่อง และ utilization จริงประมาณเท่าไร</li><li>Downtime รับได้กี่นาที และมี requirement เรื่อง DR หรือไม่</li><li>ทีม IT ดูแล Linux/Windows/VMware เก่งด้านไหนเป็นพิเศษ</li></ul></div><div class="hero-card"><h4>Engineer ควรเช็ก</h4><ul><li>CPU/RAM headroom ของ host และ storage latency</li><li>Network แยก management, storage, VM traffic หรือยัง</li><li>Backup, snapshot policy และ recovery test มีจริงไหม</li></ul></div></div></div></div><div class="topic-strip"><div class="topic-mini"><div class="topic-mini-title">Virtualization</div><div class="topic-mini-desc">เปลี่ยนจาก 1 app ต่อ 1 server ไปเป็น cluster ที่ใช้ทรัพยากรคุ้มขึ้นและย้าย VM ได้ไม่ดับเครื่อง</div></div><div class="topic-mini"><div class="topic-mini-title">Container Platform</div><div class="topic-mini-desc">เหมาะกับงานที่ deploy บ่อย ต้อง scale เร็ว และต้องมี pipeline อัตโนมัติ</div></div><div class="topic-mini"><div class="topic-mini-title">Backup + DR</div><div class="topic-mini-desc">ลูกค้าไม่ได้ซื้อแค่ server แต่ซื้อความมั่นใจว่าระบบกลับมาได้เมื่อเกิดเหตุ</div></div></div><div class="section-label">Infrastructure — Virtualization</div>
           <div class="card-grid">
             <div class="card" onclick="openSheet('vm-what')"><div class="card-row"><div class="card-icon" style="background:var(--green-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--green-text)" stroke-width="1.4"><rect x="2" y="2" width="16" height="16" rx="2"/><rect x="5" y="5" width="4" height="4" rx="1"/><rect x="11" y="5" width="4" height="4" rx="1"/><rect x="5" y="11" width="4" height="4" rx="1"/><rect x="11" y="11" width="4" height="4" rx="1"/></svg></div><div class="card-info"><div class="card-title">VM คืออะไร? ทำไมต้องใช้?</div><div class="card-desc">Virtual Machine พื้นฐาน · ประโยชน์ · ใช้ในองค์กรอย่างไร</div></div><div class="card-chevron">›</div></div></div>
             <div class="card" onclick="openSheet('vm-concept')"><div class="card-row"><div class="card-icon" style="background:var(--green-bg)"><svg viewBox="0 0 20 20" fill="none" stroke="var(--green-text)" stroke-width="1.4"><rect x="2" y="3" width="16" height="14" rx="2"/><path d="M2 8h16"/><rect x="5" y="11" width="4" height="3" rx=".5"/><rect x="11" y="11" width="4" height="3" rx=".5"/></svg></div><div class="card-info"><div class="card-title">Hypervisor & Architecture</div><div class="card-desc">Type 1 vs Type 2 · vCPU · vRAM · vDisk</div></div><div class="card-chevron">›</div></div></div>
